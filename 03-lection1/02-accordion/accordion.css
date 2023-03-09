@@ -1,4 +1,4 @@
-.accordions {
+.accordion-wrapper {
   padding: 10px;
 }
 
@@ -10,7 +10,7 @@
   background: var(--white);
   border: 1px solid var(--gray-1);
   border-radius: 8px;
-  padding: 24px 0 24px 32px;
+  padding: 24px 32px;
   margin-bottom: 8px;
 }
 
@@ -34,15 +34,19 @@
   line-height: 24px;
   color: var(--black);
   display: block;
-  cursor: pointer;
-}
-
-.accordion__summary::-webkit-details-marker {
-    display: none;
 }
 
 .accordion__summary::-webkit-details-marker {
   display: none;
+}
+
+.accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion__title {
+  display: inline;
+  cursor: pointer;
 }
 
 .accordion__details {
