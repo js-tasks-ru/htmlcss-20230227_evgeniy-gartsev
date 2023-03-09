@@ -18,7 +18,7 @@
 
     --primary-hover: #2342C0;
     --secondary-hover: #5028C6;
-    --alternate-hover: #212429;
+    --alternate-hover: var(--black);
 }
 
 * {
