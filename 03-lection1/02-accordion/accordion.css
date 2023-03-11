@@ -1,6 +1,6 @@
 .accordion__item {
   background: var(--white);
-  border: 1px solid var(--gray-1);
+  border: 1px solid var(--gray-3);
   border-radius: 8px;
   padding: 24px 32px;
   margin-bottom: 8px;
@@ -32,10 +32,6 @@
   display: none;
 }
 
-.accordion__summary::-webkit-details-marker {
-  display: none;
-}
-
 .accordion__title {
   display: inline;
   cursor: pointer;
@@ -53,5 +49,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--gray-2);
+  color: var(--gray-4);
 }
