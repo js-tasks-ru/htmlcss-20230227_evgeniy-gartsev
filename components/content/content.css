@@ -1,4 +1,31 @@
 .content {
-    background-color: #F9FAFC;
-    height: 200px;
+  background-color: #f9fafc;
+}
+
+.content__container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+  padding: 68px 0 204px 0;
+}
+
+.content__card {
+  width: 350px;
+  height: 367px;
+  background-color: var(--white);
+  box-shadow: 0px 2px 4px var(--black);
+  border-radius: 12px;
+}
+
+.content__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--black);
 }
