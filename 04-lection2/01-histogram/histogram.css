@@ -2,7 +2,6 @@
   background: var(--white);
   border: 1px solid var(--gray-3);
   border-radius: 8px;
-  width: 354px;
   padding: 16px 24px 24px 24px;
 }
 
@@ -29,7 +28,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  text-align: right;
   color: var(--primary);
 }
 
@@ -45,14 +43,12 @@
 .histogram__chart {
   height: 50px;
   display: flex;
-  justify-content: space-around;
   align-items: end;
   column-gap: 1px;
-  padding-top: 39px;
+  margin-top: 39px;
 }
 
 .histogram__chart-block {
   background-color: var(--primary);
-  width: 9px;
-  height: 100%;
+  flex-basis: 9px;
 }
