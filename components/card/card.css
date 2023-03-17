@@ -1,0 +1,17 @@
+.card {
+  width: 350px;
+  height: 367px;
+  background-color: var(--white);
+  box-shadow: 0px 2px 4px var(--black);
+  border-radius: 12px;
+}
+
+.card__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--black);
+}

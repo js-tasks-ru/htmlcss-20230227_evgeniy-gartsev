@@ -5,27 +5,28 @@
 @import '../../components/page/page.css';
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
+@import '../../components/card/card.css';
 
 :root {
-    --white: #ffffff;
-    --gray-1: #F8F9FA;
-    --gray-2: #DDE2E5;
-    --gray-3: #ACB5BD;
-    --gray-4: #495057;
-    --black: #212429;
-    --blue: #4263EB;
-    --purple: #7048E8;
-    --pink: #F784AD;
+  --white: #ffffff;
+  --gray-1: #f8f9fa;
+  --gray-2: #dde2e5;
+  --gray-3: #acb5bd;
+  --gray-4: #495057;
+  --black: #212429;
+  --blue: #4263eb;
+  --purple: #7048e8;
+  --pink: #f784ad;
 
-    --primary: var(--blue);
-    --secondary: var(--purple);
-    --alternate: var(--white);
+  --primary: var(--blue);
+  --secondary: var(--purple);
+  --alternate: var(--white);
 
-    --primary-hover: #2342C0;
-    --secondary-hover: #5028C6;
-    --alternate-hover: var(--black);
+  --primary-hover: #2342c0;
+  --secondary-hover: #5028c6;
+  --alternate-hover: var(--black);
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
