@@ -20,26 +20,22 @@
 }
 
 .skeleton__titles {
-  flex-basis: calc(100% - 64px)
+  flex-basis: calc(100% - 64px);
 }
 
 .skeleton__line {
   background: var(--gray-2);
   height: 20px;
-  width: 60%;
+  width: 100%;
   margin-bottom: 8px;
+}
+
+.skeleton__line_short {
+  width: 60%;
 }
 
 .skeleton__line:last-child {
   margin-bottom: 0px;
-}
-
-.skeleton__line_middle {
-  width: 100%;
-}
-
-.skeleton__line_long {
-  width: 100%;
 }
 
 .skeleton__description {
