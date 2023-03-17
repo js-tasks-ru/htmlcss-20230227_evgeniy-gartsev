@@ -1,0 +1,30 @@
+.sidebar__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.sidebar__link {
+  display: block;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--black);
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.sidebar__link:hover {
+  text-decoration: underline;
+}
+
+.sidebar__link:last-child {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
