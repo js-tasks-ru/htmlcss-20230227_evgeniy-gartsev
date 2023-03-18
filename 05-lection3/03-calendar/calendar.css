@@ -3,8 +3,7 @@
   border: 1px solid var(--gray-3);
   border-radius: 8px;
   max-width: 304px;
-  padding: 28px 30px 40px 30px;
-  text-align: center;
+  padding: 28px 26px 32px;
 }
 
 .calendar__wrapper {
@@ -21,6 +20,7 @@
   line-height: 24px;
   color: var(--dark-blue);
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .calendar__content {
