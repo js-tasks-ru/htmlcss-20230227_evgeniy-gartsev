@@ -1,18 +1,4 @@
-.content {
-  background-color: var(--gray-1);
-}
-
-.content__container {
-  flex-grow: 1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: start;
-  gap: 30px;
-  padding: 68px 0 204px 0;
-}
-
-.content__card {
+.card {
   width: 350px;
   height: 367px;
   background-color: var(--white);
@@ -20,7 +6,7 @@
   border-radius: 12px;
 }
 
-.content__title {
+.card__title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
