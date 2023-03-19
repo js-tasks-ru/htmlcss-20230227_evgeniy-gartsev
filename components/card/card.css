@@ -15,3 +15,18 @@
   text-align: center;
   color: var(--black);
 }
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 164px;
+    height: 210px;
+  }
+
+  .card__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 41px;
+    border-top: 1px solid var(--gray-2);
+  }
+}
