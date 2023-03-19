@@ -12,7 +12,7 @@
 
 .component__container {
   display: grid;
-  grid-template-columns: auto 4fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto;
   column-gap: 56px;
 }
