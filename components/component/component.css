@@ -8,6 +8,8 @@
   background-color: var(--white);
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 12px;
+  padding-top: 32px;
+  padding-left: 48px;
 }
 
 .component__container {
@@ -15,4 +17,37 @@
   grid-template-columns: auto 1fr;
   grid-template-rows: auto;
   column-gap: 56px;
+  grid-template-areas: 'sidebar info';
+}
+
+.component__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--gray-4);
+}
+
+@media screen and (max-width: 480px) {
+  .component__container {
+    column-gap: 0;
+  }
+
+  .component__container > :first-child {
+    display: none;
+  }
+
+  .component__description {
+    grid-column-start: 2;
+  }
+
+  .component__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--gray-4);
+  }
 }
