@@ -1,5 +1,5 @@
 .content {
-  background-color: #f9fafc;
+  background-color: var(--gray-1);
 }
 
 .content__container {
@@ -33,6 +33,6 @@
 @media screen and (max-width: 480px) {
   .content__container {
     gap: 16px;
-    padding: 22px 0 133px
+    padding: 22px 0 133px;
   }
 }
