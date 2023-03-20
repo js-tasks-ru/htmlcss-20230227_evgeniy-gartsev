@@ -1,5 +1,5 @@
 .content {
-  background-color: #f9fafc;
+  background-color: var(--gray-1);
 }
 
 .content__container {
