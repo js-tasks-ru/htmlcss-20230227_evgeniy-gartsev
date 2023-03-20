@@ -1,0 +1,18 @@
+.component {
+  background: var(--gray-1);
+  padding-top: 36px;
+  padding-bottom: 165px;
+}
+
+.component__description {
+  background-color: var(--white);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+}
+
+.component__container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  column-gap: 56px;
+}
