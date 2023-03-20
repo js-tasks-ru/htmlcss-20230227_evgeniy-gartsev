@@ -6,7 +6,9 @@
 .tooltip__bubble {
   visibility: hidden;
   position: absolute;
-  top: 0;
+  bottom: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--primary);
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 10px;
@@ -30,15 +32,13 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--gray-2);
-  display: block;
+  white-space: nowrap;
 }
 
 .tooltip__trigger {
-  padding: 64px 55px 0;
   color: var(--black);
   width: 22px;
   height: 22px;
-  transform: translateX(-1px);
 }
 
 .tooltip__trigger:hover ~ .tooltip__bubble {
