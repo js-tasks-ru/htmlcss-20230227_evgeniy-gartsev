@@ -34,7 +34,7 @@
     column-gap: 0;
   }
 
-  .component__container > :first-child {
+  .component__sidebar {
     display: none;
   }
 
@@ -43,11 +43,6 @@
   }
 
   .component__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
     color: var(--gray-4);
   }
 }
