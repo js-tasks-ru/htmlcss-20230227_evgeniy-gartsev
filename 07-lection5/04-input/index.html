@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <fieldset class="input-fieldset">
+      <legend class="input-fieldset__legend">Label</legend>
+      <label class="input-fieldset__label">
+        <input
+          type="text"
+          class="input-fieldset__input"
+          placeholder="Placeholder"
+        />
+        <svg class="input-fieldset__icon input-fieldset__icon_success">
+          <use href="../../assets/images/icons.svg#check-circle"></use>
+        </svg>
+        <svg class="input-fieldset__icon input-fieldset__icon_invalid">
+          <use href="../../assets/images/icons.svg#alert-triangle"></use>
+        </svg>
+      </label>
+    </fieldset>
 
-    </body>
+    <fieldset class="input-fieldset">
+      <legend class="input-fieldset__legend">Label</legend>
+      <label class="input-fieldset__label">
+        <input
+          type="text"
+          class="input-fieldset__input input-fieldset__input_success"
+          placeholder="Placeholder"
+        />
+        <svg class="input-fieldset__icon input-fieldset__icon_success">
+          <use href="../../assets/images/icons.svg#check-circle"></use>
+        </svg>
+        <svg class="input-fieldset__icon input-fieldset__icon_invalid">
+          <use href="../../assets/images/icons.svg#alert-triangle"></use>
+        </svg>
+      </label>
+    </fieldset>
+
+    <fieldset class="input-fieldset">
+      <legend class="input-fieldset__legend">Label</legend>
+      <label class="input-fieldset__label">
+        <input
+          type="text"
+          class="input-fieldset__input input-fieldset__input_invalid"
+          placeholder="Placeholder"
+        />
+        <svg class="input-fieldset__icon input-fieldset__icon_success">
+          <use href="../../assets/images/icons.svg#check-circle"></use>
+        </svg>
+        <svg class="input-fieldset__icon input-fieldset__icon_invalid">
+          <use href="../../assets/images/icons.svg#alert-triangle"></use>
+        </svg>
+      </label>
+    </fieldset>
+
+    <fieldset class="input-fieldset">
+      <legend class="input-fieldset__legend">Label</legend>
+      <label class="input-fieldset__label">
+        <input
+          type="text"
+          class="input-fieldset__input"
+          placeholder="Placeholder"
+          disabled
+        />
+        <svg class="input-fieldset__icon input-fieldset__icon_success">
+          <use href="../../assets/images/icons.svg#check-circle"></use>
+        </svg>
+        <svg class="input-fieldset__icon input-fieldset__icon_invalid">
+          <use href="../../assets/images/icons.svg#alert-triangle"></use>
+        </svg>
+      </label>
+    </fieldset>
+  </body>
 </html>
