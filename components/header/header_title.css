@@ -1,32 +1,17 @@
-.header {
-  background-color: var(--white);
-  padding-top: 25px;
-}
-
-.header_bg-gray {
-  background-color: var(--gray-1);
-}
-
-.header__title {
+.header-title {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 50px;
   line-height: 64px;
   color: var(--black);
-  margin-top: 40px;
 }
 
 @media screen and (max-width: 480px) {
-  .header {
-    padding: 17px 0 69px;
-  }
-
-  .header__title {
+  .header-title {
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
     color: var(--gray-4);
-    margin-top: 49px;
   }
 }
