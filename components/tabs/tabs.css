@@ -40,3 +40,9 @@
   color: var(--black);
   border-bottom: 5px solid var(--black);
 }
+
+@media screen and (max-width: 480px) {
+  .tabls__scroller {
+    display: none;
+  }
+}
