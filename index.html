@@ -16,79 +16,78 @@
           <h1 class="header-title header__title">Reusable component library</h1>
         </div>
       </header>
-      <main class="content">
-        <div class="container">
-          <div class="tabs">
-            <input
-              type="radio"
-              class="tabs__input tabs__input_all-components"
-              id="tabs__all-components"
-              name="tabs-content"
-              checked
-            />
-            <input
-              type="radio"
-              class="tabs__input tabs__input_elements"
-              id="tabs__elements"
-              name="tabs-content"
-            />
-            <input
-              type="radio"
-              class="tabs__input tabs__input_containers"
-              id="tabs__containers"
-              name="tabs-content"
-            />
-            <input
-              type="radio"
-              class="tabs__input tabs__input_templates"
-              id="tabs__templates"
-              name="tabs-content"
-            />
-            <div class="tabls__scroller">
-              <label
-                class="tabs__label tabs__label_all-components"
-                for="tabs__all-components"
-                >All components</label
-              >
-              <label
-                class="tabs__label tabs__label_elements"
-                for="tabs__elements"
-                >Elements</label
-              >
-              <label
-                class="tabs__label tabs__label_containers"
-                for="tabs__containers"
-                >Containers</label
-              >
-              <label
-                class="tabs__label tabs__label_templates"
-                for="tabs__templates"
-                >Templates</label
-              >
-            </div>
+
+      <div class="tabs">
+        <input
+          type="radio"
+          class="tabs__input tabs__input_all-components"
+          id="tabs__all-components"
+          name="tabs-content"
+          checked
+        />
+        <input
+          type="radio"
+          class="tabs__input tabs__input_elements"
+          id="tabs__elements"
+          name="tabs-content"
+        />
+        <input
+          type="radio"
+          class="tabs__input tabs__input_containers"
+          id="tabs__containers"
+          name="tabs-content"
+        />
+        <input
+          type="radio"
+          class="tabs__input tabs__input_templates"
+          id="tabs__templates"
+          name="tabs-content"
+        />
+        <div class="tabls__scroller">
+          <label
+            class="tabs__label tabs__label_all-components"
+            for="tabs__all-components"
+            >All components</label
+          >
+          <label class="tabs__label tabs__label_elements" for="tabs__elements"
+            >Elements</label
+          >
+          <label
+            class="tabs__label tabs__label_containers"
+            for="tabs__containers"
+            >Containers</label
+          >
+          <label class="tabs__label tabs__label_templates" for="tabs__templates"
+            >Templates</label
+          >
+        </div>
+
+        <main class="content">
+          <div class="container">
             <div class="content__container">
-              <div class="card">
+              <div class="card tabs__content">
                 <h3 class="card__title">Tooltip</h3>
               </div>
-              <div class="card">
+              <div class="card tabs__content">
                 <h3 class="card__title">Custom form elements</h3>
               </div>
-              <div class="card">
+              <div class="card tabs__content tabs__content_elements">
                 <h3 class="card__title">Calendar</h3>
               </div>
-              <div class="card">
+              <div class="card tabs__content tabs__content_containers">
                 <h3 class="card__title">Modal dialog</h3>
               </div>
-              <div class="card">
+              <div class="card tabs__content tabs__content_containers">
                 <h3 class="card__title">Histogram</h3>
               </div>
-              <div class="card">
+              <div class="card tabs__content tabs__content_templates">
                 <h3 class="card__title">Avatar</h3>
               </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
+
       <footer class="footer">
         <div class="container">
           <h2 class="footer__title">About</h2>
