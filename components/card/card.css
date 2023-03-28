@@ -4,6 +4,33 @@
   background-color: var(--white);
   box-shadow: 0px 2px 4px var(--black);
   border-radius: 12px;
+  position: relative;
+}
+
+.card__content {
+  position: relative;
+  display: flex;
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__checkboxes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 37px;
+  height: 116px;
+  align-content: center;
+}
+
+.card__description {
+  position: absolute;
+  left: 50%;
+  bottom: 38px;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 .card__title {
@@ -14,6 +41,12 @@
   line-height: 25px;
   text-align: center;
   color: var(--black);
+}
+
+.card__title_little {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 @media screen and (max-width: 480px) {
