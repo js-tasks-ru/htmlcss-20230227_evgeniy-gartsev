@@ -1,0 +1,12 @@
+.mobile-menu-open {
+  width: 24px;
+  height: 24px;
+  color: var(--gray-4);
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-menu-open {
+    display: inline-block;
+  }
+}
