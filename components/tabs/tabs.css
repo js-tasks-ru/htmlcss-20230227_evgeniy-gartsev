@@ -2,6 +2,20 @@
   background: var(--white);
 }
 
+.tabs__container {
+  background-color: var(--gray-1);
+}
+
+.tabs__wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+  padding: 68px 0 204px 0;
+}
+
 .tabls__scroller {
   display: flex;
   column-gap: 40px;
@@ -34,31 +48,36 @@
   border-bottom: 5px solid var(--black);
 }
 
-.tabs__content,
-.tabs__input_containers:checked ~ .content .tabs__content,
-.tabs__input_elements:checked ~ .content .tabs__content,
-.tabs__input_templates:checked ~ .content .tabs__content {
+.tabs_.tabs__container,
+.tabs__input_containers:checked ~ .tabs__container .tabs__content,
+.tabs__input_elements:checked ~ .tabs__container .tabs__content,
+.tabs__input_templates:checked ~ .tabs__container .tabs__content {
   display: none;
 }
 
-.tabs__input_all-components:checked ~ .content .tabs__content {
+.tabs__input_all-components:checked ~ .tabs__container .tabs__content {
   display: block;
 }
 
-.tabs__input_containers:checked ~ .content .tabs__content_containers {
+.tabs__input_containers:checked ~ .tabs__container .tabs__content_containers {
   display: block;
 }
 
-.tabs__input_elements:checked ~ .content .tabs__content_elements {
+.tabs__input_elements:checked ~ .tabs__container .tabs__content_elements {
   display: block;
 }
 
-.tabs__input_templates:checked ~ .content .tabs__content_templates {
+.tabs__input_templates:checked ~ .tabs__container .tabs__content_templates {
   display: block;
 }
 
 @media screen and (max-width: 480px) {
   .tabls__scroller {
     display: none;
+  }
+
+  .tabs__wrapper {
+    gap: 16px;
+    padding: 22px 0 133px;
   }
 }
