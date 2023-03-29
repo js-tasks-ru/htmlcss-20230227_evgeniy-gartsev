@@ -14,6 +14,8 @@
 @import '../../components/checkbox/checkbox.css';
 @import '../../components/radio/radio.css';
 @import '../../components/calendar/calendar.css';
+@import '../../components/histogram/histogram.css';
+@import '../../components/avatar/avatar.css';
 
 :root {
   --white: #ffffff;
