@@ -79,5 +79,47 @@
         stroke-linejoin="round"
       />
     </symbol>
+
+    <symbol viewBox="0 0 24 24" fill="none" id="burger-button">
+      <path
+        d="M3 12H21"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3 6H21"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3 18H21"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+    <symbol viewBox="0 0 32 32" fill="none" id="close-button">
+      <circle cx="16" cy="16" r="16" fill="#DDE2E5" />
+      <path
+        d="M22 10L10 22"
+        stroke="#212429"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M10 10L22 22"
+        stroke="#212429"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
   </defs>
 </svg>
