@@ -9,7 +9,12 @@
   padding: 15px 65px 14px;
   color: var(--white);
   border: 1px solid;
-  transition: background-color 200ms linear, border-color 200ms linear;
+  transition: background-color 200ms linear, border-color 200ms linear,
+    transform 200ms linear;
+}
+
+.button:active {
+  transform: translateY(2px);
 }
 
 .button:disabled {
