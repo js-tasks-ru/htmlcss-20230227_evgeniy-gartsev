@@ -14,13 +14,14 @@
 
 .toggler__area {
   box-sizing: border-box;
-  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
   width: 52px;
   height: 28px;
   background: var(--white);
   border: 1px solid var(--gray-2);
   border-radius: 16px;
-  transition: background-color 200ms linear;
 }
 
 .toggler__label {
@@ -39,9 +40,6 @@
   border-radius: 50%;
   background: var(--gray-2);
   margin: 1px;
-  position: absolute;
-  left: 0;
-  transition: left 200ms linear;
 }
 
 .toggler__wrapper {
@@ -53,12 +51,12 @@
 
 .toggler__input:checked ~ .toggler__wrapper .toggler__area {
   background: var(--primary);
+  justify-content: right;
   border: 1px solid var(--primary);
 }
 
 .toggler__input:checked ~ .toggler__wrapper .toggler__icon {
   background: var(--white);
-  left: 24px;
 }
 
 .toggler__input:focus ~ .toggler__wrapper .toggler__label {

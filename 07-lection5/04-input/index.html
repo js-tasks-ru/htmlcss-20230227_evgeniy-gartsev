@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div class="text-input">
+      <label class="text-input__label">Label</label>
+      <div class="text-input__area">
+        <input
+          type="text"
+          class="text-input__input"
+          placeholder="Placeholder"
+        />
+        <svg class="text-input__icon text-input__icon_success">
+          <use href="../../assets/images/icons.svg#check-circle"></use>
+        </svg>
+        <svg class="text-input__icon text-input__icon_invalid">
+          <use href="../../assets/images/icons.svg#alert-triangle"></use>
+        </svg>
+      </div>
+    </div>
 
-    </body>
+    <div class="text-input text-input_invalid">
+      <label class="text-input__label">Label</label>
+      <div class="text-input__area">
+        <input
+          type="text"
+          class="text-input__input"
+          placeholder="Placeholder"
+        />
+        <svg class="text-input__icon text-input__icon_success">
+          <use href="../../assets/images/icons.svg#check-circle"></use>
+        </svg>
+        <svg class="text-input__icon text-input__icon_invalid">
+          <use href="../../assets/images/icons.svg#alert-triangle"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="text-input text-input_success">
+      <label class="text-input__label">Label</label>
+      <div class="text-input__area">
+        <input
+          type="text"
+          class="text-input__input"
+          placeholder="Placeholder"
+        />
+        <svg class="text-input__icon text-input__icon_success">
+          <use href="../../assets/images/icons.svg#check-circle"></use>
+        </svg>
+        <svg class="text-input__icon text-input__icon_invalid">
+          <use href="../../assets/images/icons.svg#alert-triangle"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="text-input">
+      <label class="text-input__label">Label</label>
+      <div class="text-input__area">
+        <input
+          type="text"
+          class="text-input__input"
+          placeholder="Placeholder"
+          disabled
+        />
+        <svg class="text-input__icon text-input__icon_success">
+          <use href="../../assets/images/icons.svg#check-circle"></use>
+        </svg>
+        <svg class="text-input__icon text-input__icon_invalid">
+          <use href="../../assets/images/icons.svg#alert-triangle"></use>
+        </svg>
+      </div>
+    </div>
+  </body>
 </html>

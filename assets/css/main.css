@@ -11,6 +11,7 @@
 @import '../../components/card/card.css';
 @import '../../components/logo/logo.css';
 @import '../../components/tabs/tabs.css';
+@import '../../components/toggler/toggler.css';
 
 :root {
   --white: #ffffff;
@@ -23,6 +24,7 @@
   --dark-blue: #334d6e;
   --purple: #7048e8;
   --pink: #f784ad;
+  --red: #f03d3e;
 
   --primary: var(--blue);
   --secondary: var(--purple);
