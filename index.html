@@ -19,7 +19,7 @@
       <main class="content">
         <div class="container">
           <div class="content__container">
-            <div class="card">
+            <a class="card">
               <div class="card__content">
                 <div class="tooltip tooltip_visible">
                   <div class="tooltip__bubble">
@@ -32,11 +32,11 @@
               </div>
               <div class="card__description">
                 <h3 class="card__title">Tooltip</h3>
-                <h4 class="card__title card__title_little">Container</h4>
+                <h4 class="card__title-little">Container</h4>
               </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
               <div class="card__content">
                 <div class="card__checkboxes">
                   <label class="checkbox checkbox_inactive">
@@ -103,13 +103,13 @@
               </div>
               <div class="card__description">
                 <h3 class="card__title">Custom form elements</h3>
-                <h4 class="card__title card__title_little">Element</h4>
+                <h4 class="card__title-little">Element</h4>
               </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
               <div class="card__content">
-                <div class="calendar calendar_small">
+                <div class="calendar">
                   <h3 class="calendar__title">October 2019</h3>
                   <div class="calendar__wrapper">
                     <div class="calendar__content">
@@ -169,23 +169,38 @@
               </div>
               <div class="card__description">
                 <h3 class="card__title">Calendar</h3>
-                <h4 class="card__title card__title_little">Container</h4>
+                <h4 class="card__title-little">Container</h4>
               </div>
-            </div>
+            </a>
 
-            <div class="card">
-              <div class="card__content"></div>
+            <a class="card">
+              <div class="card__content">
+                <div class="modal modal_inactive" id="modal">
+                  <div class="modal__window">
+                    <svg class="modal__cross" id="modal-close">
+                      <use href="../../assets/images/icons.svg#cross"></use>
+                    </svg>
+                    <h3 class="modal__title">Modal title</h3>
+                    <p class="modal__content">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="card__description">
                 <h3 class="card__title">Modal dialog</h3>
-                <h4 class="card__title card__title_little">Container</h4>
+                <h4 class="card__title-little">Container</h4>
               </div>
-            </div>
-            <div class="card">
+            </a>
+
+            <a class="card">
               <div class="card__content">
                 <div class="histogram histogram_inactive">
                   <div class="histogram__header">
                     <h3 class="histogram__title">Total orders</h3>
-                    <a href="" class="histogram__view">View all</a>
+                    <h4 class="histogram__view">View all</h4>
                   </div>
                   <h4 class="histogram__score">50254</h4>
                   <div class="histogram__chart">
@@ -315,13 +330,13 @@
               </div>
               <div class="card__description">
                 <h3 class="card__title">Histogram</h3>
-                <h4 class="card__title card__title_little">Element</h4>
+                <h4 class="card__title-little">Element</h4>
               </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
               <div class="card__content">
-                <div class="avatar avatar_big">
+                <div class="avatar">
                   <img
                     class="avatar__img"
                     src="./assets/images/avatar-200.jpg"
@@ -331,9 +346,9 @@
               </div>
               <div class="card__description">
                 <h3 class="card__title">Avatar</h3>
-                <h4 class="card__title card__title_little">Element</h4>
+                <h4 class="card__title-little">Element</h4>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </main>

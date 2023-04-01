@@ -72,3 +72,26 @@
 .radio__input:disabled ~ .radio__wrapper {
   cursor: default;
 }
+
+@media screen and (max-width: 480px) {
+  .radio__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .radio__area {
+    width: 18px;
+    height: 18px;
+  }
+
+  .radio__icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .radio__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

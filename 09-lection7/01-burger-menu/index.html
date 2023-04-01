@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./burger-menu.css" />
+    <link rel="stylesheet" href="./burger-menu-open.css" />
+    <script defer src="./burger-menu.js"></script>
+  </head>
+  <body>
+    <svg class="mobile-menu-open" id="burger-menu-open">
+      <use href="../../assets/images/icons.svg#burger-button"></use>
+    </svg>
+    <div class="mobile-menu" id="burger-menu">
+      <div class="mobile-menu__top">
+        <svg class="mobile-menu__close" id="burger-menu-close">
+          <use href="../../assets/images/icons.svg#close-button"></use>
+        </svg>
+        <div class="logo mobile-menu__logo">
+          <div class="logo__square"></div>
+          <div class="logo__circle"></div>
+          <div class="logo__triangle"></div>
+        </div>
+      </div>
+      <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__manage">
+          <h4 class="mobile-menu__manage-title">Elements</h4>
+          <div class="mobile-menu__manage-items">
+            <a class="mobile-menu__manage-item">Custom form elements</a>
+            <a class="mobile-menu__manage-item">Button</a>
+            <a class="mobile-menu__manage-item">Chekbox</a>
+            <a class="mobile-menu__manage-item">Tooltip</a>
+            <a class="mobile-menu__manage-item">Toggler</a>
+          </div>
+        </div>
+        <div class="mobile-menu__manage">
+          <h4 class="mobile-menu__manage-title">Containers</h4>
+          <div class="mobile-menu__manage-items">
+            <a class="mobile-menu__manage-item">Accordion</a>
+            <a class="mobile-menu__manage-item">Sceleton</a>
+            <a class="mobile-menu__manage-item">Histogram</a>
+            <a class="mobile-menu__manage-item">Modal</a>
+            <a class="mobile-menu__manage-item">Calendar</a>
+            <a class="mobile-menu__manage-item">Avatar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

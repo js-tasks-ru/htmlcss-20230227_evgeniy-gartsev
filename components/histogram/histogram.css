@@ -57,3 +57,34 @@
   background-color: var(--primary);
   flex-basis: 20px;
 }
+
+@media screen and (max-width: 480px) {
+  .histogram {
+    width: 140px;
+    padding: 4px 6px 6px 6px;
+  }
+
+  .histogram__title {
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  .histogram__view {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .histogram__score {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .histogram__chart {
+    margin-top: 0;
+  }
+
+  .histogram__chart-block {
+    flex-basis: 10px;
+  }
+}

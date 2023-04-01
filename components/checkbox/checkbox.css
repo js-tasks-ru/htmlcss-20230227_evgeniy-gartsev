@@ -75,3 +75,26 @@
 .checkbox__input:disabled ~ .checkbox__wrapper {
   cursor: default;
 }
+
+@media screen and (max-width: 480px) {
+  .checkbox__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .checkbox__area {
+    width: 18px;
+    height: 18px;
+  }
+
+  .checkbox__icon {
+    width: 12px;
+    height: 10px;
+  }
+
+  .checkbox__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
