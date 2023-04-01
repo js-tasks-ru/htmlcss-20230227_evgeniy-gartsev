@@ -18,6 +18,7 @@
 @import '../../components/avatar/avatar.css';
 @import '../../components/toggler/toggler.css';
 @import '../../components/modal/modal.css';
+@import '../../components/toggler/toggler.css';
 
 :root {
   --white: #ffffff;
