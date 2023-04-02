@@ -6,12 +6,52 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
-        <div class="container">
-          <div class="logo">
+      <div class="mobile-menu" id="burger-menu">
+        <div class="mobile-menu__top">
+          <svg class="mobile-menu__close" id="burger-menu-close">
+            <use href="../../assets/images/icons.svg#close-button"></use>
+          </svg>
+          <div class="logo mobile-menu__logo">
             <div class="logo__square"></div>
             <div class="logo__circle"></div>
             <div class="logo__triangle"></div>
+          </div>
+        </div>
+        <div class="mobile-menu__wrapper">
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Elements</h4>
+            <div class="mobile-menu__manage-items">
+              <a class="mobile-menu__manage-item">Custom form elements</a>
+              <a class="mobile-menu__manage-item">Button</a>
+              <a class="mobile-menu__manage-item">Chekbox</a>
+              <a class="mobile-menu__manage-item">Tooltip</a>
+              <a class="mobile-menu__manage-item">Toggler</a>
+            </div>
+          </div>
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Containers</h4>
+            <div class="mobile-menu__manage-items">
+              <a class="mobile-menu__manage-item">Accordion</a>
+              <a class="mobile-menu__manage-item">Sceleton</a>
+              <a class="mobile-menu__manage-item">Histogram</a>
+              <a class="mobile-menu__manage-item">Modal</a>
+              <a class="mobile-menu__manage-item">Calendar</a>
+              <a class="mobile-menu__manage-item">Avatar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <svg class="mobile-menu-open header__top_left" id="burger-menu-open">
+              <use href="assets/images/icons.svg#burger-button"></use>
+            </svg>
+            <div class="logo">
+              <div class="logo__square"></div>
+              <div class="logo__circle"></div>
+              <div class="logo__triangle"></div>
+            </div>
           </div>
           <h1 class="header-title header__title">Reusable component library</h1>
         </div>
@@ -73,7 +113,10 @@
                   <h4 class="card__title-little">Container</h4>
                 </div>
               </a>
-              <a class="card tabs__content tabs__content_second">
+              <a
+                class="card tabs__content tabs__content_second"
+                href="./pages/custom_form_elements.html"
+              >
                 <div class="card__content">
                   <div class="card__checkboxes">
                     <label class="checkbox checkbox_inactive">
@@ -408,5 +451,6 @@
         </div>
       </footer>
     </div>
+    <script src="./components/mobile_menu/mobile-menu.js"></script>
   </body>
 </html>

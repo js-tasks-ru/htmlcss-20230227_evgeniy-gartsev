@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header header_bg-gray">
+        <div class="container">
+          <div class="logo">
+            <div class="logo__square"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </div>
+        </div>
+      </header>
+      <div class="component">
+        <div class="container component__container">
+          <div class="sidebar component__sidebar">
+            <h4 class="sidebar__title">Components</h4>
+            <a class="sidebar__link" href="">Modal</a>
+            <a class="sidebar__link" href="">Tooltip</a>
+            <a class="sidebar__link" href="">Avatar</a>
+            <a class="sidebar__link" href="">Calendar</a>
+            <a class="sidebar__link" href="">Histogram</a>
+            <a class="sidebar__link" href="">Custom form elements</a>
+            <a class="sidebar__link" href="">Main page</a>
+          </div>
+          <div class="component__description">
+            <div class="component__view">
+              <h3 class="component__title">Tooltip</h3>
+              <div class="component__tooltip-container">
+                <div class="tooltip">
+                  <svg class="tooltip__trigger">
+                    <use href="../../assets/images/icons.svg#question"></use>
+                  </svg>
+                  <div class="tooltip__bubble">
+                    <span class="tooltip__title">Helper Text</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs tabs_component">
+              <input
+                type="radio"
+                class="tabs__input tabs__input_first"
+                id="tabs-first"
+                name="tabs-content"
+                checked
+              />
+              <input
+                type="radio"
+                class="tabs__input tabs__input_second"
+                id="tabs-second"
+                name="tabs-content"
+              />
+              <div class="tabls__scroller">
+                <label class="tabs__label tabs__label_first" for="tabs-first"
+                  >HTML</label
+                >
+                <label class="tabs__label tabs__label_second" for="tabs-second"
+                  >CSS</label
+                >
+              </div>
+              <main class="tabs__container">
+                <div class="container">
+                  <div class="tabs__wrapper">
+                    <div class="tabs__content tabs__content_first">
+                      <div class="code">
+                        <div class="code__content">
+                          <code>
+                            &lt;div class=&quot;tooltip&quot;&gt; &lt;svg
+                            class=&quot;tooltip__trigger&quot;&gt; &lt;use
+                            href=&quot;../../assets/images/icons.svg#question&quot;&gt;&lt;/use&gt;
+                            &lt;/svg&gt; &lt;div
+                            class=&quot;tooltip__bubble&quot;&gt; &lt;span
+                            class=&quot;tooltip__title&quot;&gt;Helper
+                            Text&lt;/span&gt; &lt;/div&gt; &lt;/div&gt;</code
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content tabs__content_second">
+                      <div class="code-content">
+                        <code>
+                          .tooltip { display: inline-block; position: relative;
+                          } .tooltip_visible { text-align: center; }
+                          .tooltip_visible .tooltip__bubble { visibility:
+                          visible; } .tooltip_visible .tooltip__bubble {
+                          position: static; transform: translateX(0); }
+                          .tooltip_visible .tooltip__trigger { margin-top: 13px;
+                          } .tooltip__bubble { visibility: hidden; position:
+                          absolute; bottom: calc(100% + 14px); left: 50%;
+                          transform: translateX(-50%); background:
+                          var(--primary); box-shadow: 0px 2px 4px rgba(33, 36,
+                          41, 0.05); border-radius: 10px; padding: 13px 21px; }
+                          .tooltip__bubble::after { content: ''; border: 14px
+                          solid transparent; border-top-color: var(--primary);
+                          position: absolute; top: 100%; left: 50%; transform:
+                          translateX(-50%); } .tooltip__title { font-family:
+                          'Inter'; font-style: normal; font-weight: 400;
+                          font-size: 16px; line-height: 24px; color:
+                          var(--gray-2); white-space: nowrap; }
+                          .tooltip__trigger { color: var(--black); width: 22px;
+                          height: 22px; } .tooltip__trigger:hover ~
+                          .tooltip__bubble { visibility: visible; } @media
+                          screen and (max-width: 480px) { .tooltip__title {
+                          font-size: 14px; line-height: 22px; } .tooltip__bubble
+                          { padding: 10px 15px; } }
+                        </code>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <h2 class="footer__title">About</h2>
+          <div class="footer__description">
+            <p class="footer__paragraph">
+              This project is a collection of professionally designed,
+              pre-built, fully responsive HTML snippets you can drop into your
+              projects. Get started by checking out our free preview components,
+              or browsing the PNG previews in the categories you're most curious
+              about.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

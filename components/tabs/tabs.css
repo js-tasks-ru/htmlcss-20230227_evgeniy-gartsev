@@ -87,4 +87,8 @@
     gap: 16px;
     padding: 22px 0 133px;
   }
+
+  .tabs__container {
+    padding-left: 0;
+  }
 }

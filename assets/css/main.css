@@ -22,6 +22,8 @@
 @import '../../components/toggler/toggler.css';
 @import '../../components/tabs/tabs.css';
 @import '../../components/code/code.css';
+@import '../../components/mobile_menu/mobile-menu-open.css';
+@import '../../components/mobile_menu/mobile-menu.css';
 
 :root {
   --white: #ffffff;

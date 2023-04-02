@@ -8,6 +8,13 @@
   background-color: var(--gray-1);
 }
 
+.header__top_left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
 .header__title {
   font-family: 'Inter';
   font-style: normal;
@@ -29,5 +36,11 @@
     line-height: 38px;
     color: var(--gray-4);
     margin-top: 49px;
+  }
+
+  .header__top {
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
 }
