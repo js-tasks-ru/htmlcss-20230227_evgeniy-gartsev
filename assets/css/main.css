@@ -20,6 +20,8 @@
 @import '../../components/modal/modal.css';
 @import '../../components/tabs/tabs.css';
 @import '../../components/toggler/toggler.css';
+@import '../../components/tabs/tabs.css';
+@import '../../components/code/code.css';
 
 :root {
   --white: #ffffff;

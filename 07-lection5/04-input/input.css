@@ -29,6 +29,7 @@
   border: 1px solid var(--gray-2);
   border-radius: 8px;
   padding: 17px 45px 17px 24px;
+  transition: border-color 200ms linear;
 }
 
 .text-input__input:disabled {

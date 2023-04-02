@@ -1,0 +1,7 @@
+.code .code__content:last-child {
+    margin-top: 20px;
+}
+
+.code__content {
+    white-space: pre-line;
+}

@@ -31,7 +31,7 @@
             <div class="component__view">
               <h3 class="component__title">Custom form elements</h3>
               <div class="component__checkbox-container">
-                <label class="checkbox checkbox_inactive">
+                <label class="checkbox">
                   <input type="checkbox" class="checkbox__input" />
                   <div class="checkbox__wrapper">
                     <div class="checkbox__area">
@@ -42,7 +42,7 @@
                     <h4 class="checkbox__label">Default</h4>
                   </div>
                 </label>
-                <label class="checkbox checkbox_inactive">
+                <label class="checkbox">
                   <input type="checkbox" class="checkbox__input" checked />
                   <div class="checkbox__wrapper">
                     <div class="checkbox__area">
@@ -53,7 +53,7 @@
                     <h4 class="checkbox__label">Checked</h4>
                   </div>
                 </label>
-                <label class="checkbox checkbox_inactive">
+                <label class="checkbox">
                   <input type="checkbox" class="checkbox__input" disabled />
                   <div class="checkbox__wrapper">
                     <div class="checkbox__area">
@@ -64,8 +64,8 @@
                     <h4 class="checkbox__label">Disabled</h4>
                   </div>
                 </label>
-                <label class="radio radio_inactive">
-                  <input type="radio" class="radio__input" />
+                <label class="radio">
+                  <input type="radio" class="radio__input" name="radio" />
                   <div class="radio__wrapper">
                     <div class="radio__area">
                       <div class="radio__icon"></div>
@@ -73,8 +73,13 @@
                     <h4 class="radio__label">Default</h4>
                   </div>
                 </label>
-                <label class="radio radio_inactive">
-                  <input type="radio" class="radio__input" checked />
+                <label class="radio">
+                  <input
+                    type="radio"
+                    class="radio__input"
+                    name="radio"
+                    checked
+                  />
                   <div class="radio__wrapper">
                     <div class="radio__area">
                       <div class="radio__icon"></div>
@@ -82,8 +87,13 @@
                     <h4 class="radio__label">Selected</h4>
                   </div>
                 </label>
-                <label class="radio radio_inactive">
-                  <input type="radio" class="radio__input" disabled />
+                <label class="radio">
+                  <input
+                    type="radio"
+                    class="radio__input"
+                    name="radio"
+                    disabled
+                  />
                   <div class="radio__wrapper">
                     <div class="radio__area">
                       <div class="radio__icon"></div>
@@ -118,7 +128,38 @@
               <main class="tabs__container">
                 <div class="container">
                   <div class="tabs__wrapper">
-                    <div class="tabs__content_first"></div>
+                    <div class="tabs__content_first">
+                      <div class="code">
+                        <div class="code__content">
+                          <code
+                            >&lt;label class=&quot;checkbox&quot;&gt; &lt;input
+                            type=&quot;checkbox&quot;
+                            class=&quot;checkbox__input&quot; /&gt; &lt;div
+                            class=&quot;checkbox__wrapper&quot;&gt; &lt;div
+                            class=&quot;checkbox__area&quot;&gt; &lt;svg
+                            class=&quot;checkbox__icon&quot;&gt; &lt;use
+                            href=&quot;../../assets/images/icons.svg#check&quot;&gt;&lt;/use&gt;
+                            &lt;/svg&gt; &lt;/div&gt; &lt;h4
+                            class=&quot;checkbox__label&quot;&gt;Default&lt;/h4&gt;
+                            &lt;/div&gt; &lt;/label&gt;</code
+                          >
+                        </div>
+                        <div class="code__content">
+                          <code class="code__content">
+                            &lt;label class=&quot;radio&quot;&gt; &lt;input
+                            type=&quot;radio&quot;
+                            class=&quot;radio__input&quot; /&gt; &lt;div
+                            class=&quot;radio__wrapper&quot;&gt; &lt;div
+                            class=&quot;radio__area&quot;&gt; &lt;div
+                            class=&quot;radio__icon&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt; &lt;h4
+                            class=&quot;radio__label&quot;&gt;Default&lt;/h4&gt;
+                            &lt;/div&gt; &lt;/label&gt;</code
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_second"></div>
                   </div>
                 </div>
               </main>
