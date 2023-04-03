@@ -8,10 +8,12 @@
     <div class="page">
       <header class="header header_bg-gray">
         <div class="container">
-          <div class="logo">
-            <div class="logo__square"></div>
-            <div class="logo__circle"></div>
-            <div class="logo__triangle"></div>
+          <div class="container">
+            <a class="logo" href="../index.html">
+              <div class="logo__square"></div>
+              <div class="logo__circle"></div>
+              <div class="logo__triangle"></div>
+            </a>
           </div>
         </div>
       </header>
@@ -19,88 +21,34 @@
         <div class="container component__container">
           <div class="sidebar component__sidebar">
             <h4 class="sidebar__title">Components</h4>
-            <a class="sidebar__link" href="">Modal</a>
-            <a class="sidebar__link" href="">Tooltip</a>
-            <a class="sidebar__link" href="">Avatar</a>
-            <a class="sidebar__link" href="">Calendar</a>
-            <a class="sidebar__link" href="">Histogram</a>
-            <a class="sidebar__link" href="">Custom form elements</a>
-            <a class="sidebar__link" href="">Main page</a>
+            <a class="sidebar__link" href="modal_dialog.html">Modal</a>
+            <a class="sidebar__link" href="tooltip.html">Tooltip</a>
+            <a class="sidebar__link" href="avatar.html">Avatar</a>
+            <a class="sidebar__link" href="calendar.html">Calendar</a>
+            <a class="sidebar__link" href="histogram.html">Histogram</a>
+            <a class="sidebar__link" href="custom_form_elements.html"
+              >Custom form elements</a
+            >
+            <a class="sidebar__link" href="../index.html">Main page</a>
           </div>
           <div class="component__description">
             <div class="component__view">
-              <h3 class="component__title">Custom form elements</h3>
-              <div class="component__checkbox-container">
-                <label class="checkbox">
-                  <input type="checkbox" class="checkbox__input" />
-                  <div class="checkbox__wrapper">
-                    <div class="checkbox__area">
-                      <svg class="checkbox__icon">
-                        <use href="../../assets/images/icons.svg#check"></use>
-                      </svg>
-                    </div>
-                    <h4 class="checkbox__label">Default</h4>
-                  </div>
-                </label>
-                <label class="checkbox">
-                  <input type="checkbox" class="checkbox__input" checked />
-                  <div class="checkbox__wrapper">
-                    <div class="checkbox__area">
-                      <svg class="checkbox__icon">
-                        <use href="../../assets/images/icons.svg#check"></use>
-                      </svg>
-                    </div>
-                    <h4 class="checkbox__label">Checked</h4>
-                  </div>
-                </label>
-                <label class="checkbox">
-                  <input type="checkbox" class="checkbox__input" disabled />
-                  <div class="checkbox__wrapper">
-                    <div class="checkbox__area">
-                      <svg class="checkbox__icon">
-                        <use href="../../assets/images/icons.svg#check"></use>
-                      </svg>
-                    </div>
-                    <h4 class="checkbox__label">Disabled</h4>
-                  </div>
-                </label>
-                <label class="radio">
-                  <input type="radio" class="radio__input" name="radio" />
-                  <div class="radio__wrapper">
-                    <div class="radio__area">
-                      <div class="radio__icon"></div>
-                    </div>
-                    <h4 class="radio__label">Default</h4>
-                  </div>
-                </label>
-                <label class="radio">
-                  <input
-                    type="radio"
-                    class="radio__input"
-                    name="radio"
-                    checked
-                  />
-                  <div class="radio__wrapper">
-                    <div class="radio__area">
-                      <div class="radio__icon"></div>
-                    </div>
-                    <h4 class="radio__label">Selected</h4>
-                  </div>
-                </label>
-                <label class="radio">
-                  <input
-                    type="radio"
-                    class="radio__input"
-                    name="radio"
-                    disabled
-                  />
-                  <div class="radio__wrapper">
-                    <div class="radio__area">
-                      <div class="radio__icon"></div>
-                    </div>
-                    <h4 class="radio__label">Disabled</h4>
-                  </div>
-                </label>
+              <h3 class="component__title">Modal dialog</h3>
+              <button class="button button_primary" id="modal-open">
+                Open modal
+              </button>
+              <div class="modal" id="modal">
+                <div class="modal__window">
+                  <svg class="modal__cross" id="modal-close">
+                    <use href="../../assets/images/icons.svg#cross"></use>
+                  </svg>
+                  <h3 class="modal__title">Modal title</h3>
+                  <p class="modal__content">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="tabs tabs_component">
@@ -132,29 +80,21 @@
                       <div class="code">
                         <div class="code__content">
                           <code
-                            >&lt;label class=&quot;checkbox&quot;&gt; &lt;input
-                            type=&quot;checkbox&quot;
-                            class=&quot;checkbox__input&quot; /&gt; &lt;div
-                            class=&quot;checkbox__wrapper&quot;&gt; &lt;div
-                            class=&quot;checkbox__area&quot;&gt; &lt;svg
-                            class=&quot;checkbox__icon&quot;&gt; &lt;use
-                            href=&quot;../../assets/images/icons.svg#check&quot;&gt;&lt;/use&gt;
-                            &lt;/svg&gt; &lt;/div&gt; &lt;h4
-                            class=&quot;checkbox__label&quot;&gt;Default&lt;/h4&gt;
-                            &lt;/div&gt; &lt;/label&gt;</code
-                          >
-                        </div>
-                        <div class="code__content">
-                          <code>
-                            &lt;label class=&quot;radio&quot;&gt; &lt;input
-                            type=&quot;radio&quot;
-                            class=&quot;radio__input&quot; /&gt; &lt;div
-                            class=&quot;radio__wrapper&quot;&gt; &lt;div
-                            class=&quot;radio__area&quot;&gt; &lt;div
-                            class=&quot;radio__icon&quot;&gt;&lt;/div&gt;
-                            &lt;/div&gt; &lt;h4
-                            class=&quot;radio__label&quot;&gt;Default&lt;/h4&gt;
-                            &lt;/div&gt; &lt;/label&gt;</code
+                            >&lt;button class=&quot;button button_primary&quot;
+                            id=&quot;modal-open&quot;&gt;Open
+                            modal&lt;/button&gt; &lt;div class=&quot;modal&quot;
+                            id=&quot;modal&quot;&gt; &lt;div
+                            class=&quot;modal__window&quot;&gt; &lt;svg
+                            class=&quot;modal__cross&quot;
+                            id=&quot;modal-close&quot;&gt; &lt;use
+                            href=&quot;../../assets/images/icons.svg#cross&quot;&gt;&lt;/use&gt;
+                            &lt;/svg&gt; &lt;h3
+                            class=&quot;modal__title&quot;&gt;Modal
+                            title&lt;/h3&gt; &lt;p
+                            class=&quot;modal__content&quot;&gt; Amet minim
+                            mollit non deserunt ullamco est sit aliqua dolor do
+                            amet sint. Velit officia consequat duis enim velit
+                            mollit. &lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</code
                           >
                         </div>
                       </div>
@@ -162,106 +102,43 @@
                     <div class="tabs__content tabs__content_second">
                       <div class="code-content">
                         <code>
-                          .checkbox {
-                            display: inline-block;
-                            position: relative;
-                          }
-                          
-                          .checkbox_inactive {
-                            pointer-events: none;
-                          }
-                          
-                          .checkbox__input {
-                            position: absolute;
-                            clip: rect(0, 0, 0, 0);
-                          }
-                          
-                          .checkbox__area {
-                            box-sizing: border-box;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 28px;
-                            height: 28px;
-                            background: var(--white);
-                            border: 1px solid var(--gray-2);
-                            border-radius: 4px;
-                          }
-                          
-                          .checkbox__label {
-                            font-family: 'Inter';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 24px;
-                            color: var(--gray-4);
-                            user-select: none;
-                          }
-                          
-                          .checkbox__icon {
-                            visibility: hidden;
-                            width: 15px;
-                            height: 13px;
-                            color: var(--white);
-                          }
-                          
-                          .checkbox__wrapper {
-                            display: flex;
-                            align-items: center;
-                            column-gap: 12px;
-                            cursor: pointer;
-                          }
-                          
-                          .checkbox__input:checked ~ .checkbox__wrapper .checkbox__area {
-                            background: var(--primary);
-                          }
-                          
-                          .checkbox__input:checked ~ .checkbox__wrapper .checkbox__icon {
-                            visibility: visible;
-                          }
-                          
-                          .checkbox__input:focus ~ .checkbox__wrapper .checkbox__label {
-                            text-decoration: underline;
-                          }
-                          
-                          .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__area {
-                            background: var(--gray-2);
-                          }
-                          
-                          .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__label {
-                            text-decoration: none;
-                          }
-                          
-                          .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__icon {
-                            visibility: hidden;
-                          }
-                          
-                          .checkbox__input:disabled ~ .checkbox__wrapper {
-                            cursor: default;
-                          }
-                          
-                          @media screen and (max-width: 480px) {
-                            .checkbox__label {
-                              font-weight: 400;
-                              font-size: 12px;
-                              line-height: 20px;
-                            }
-                          
-                            .checkbox__area {
-                              width: 18px;
-                              height: 18px;
-                            }
-                          
-                            .checkbox__icon {
-                              width: 12px;
-                              height: 10px;
-                            }
-                          
-                            .checkbox__wrapper {
-                              display: flex;
-                              flex-direction: column;
-                            }
-                          }
+                          .modal { background: rgba(196, 196, 196, 0.5); width:
+                          100vw; height: 100vh; position: fixed; top: 0; left:
+                          0; display: none; } .modal_inactive { width: 284px;
+                          height: 222px; position: static; display: flex;
+                          justify-content: center; align-items: center;
+                          pointer-events: none; } .modal_inactive .modal__window
+                          { position: static; transform: translateX(0)
+                          translateY(0); padding: 15px 20px 15px; max-width:
+                          200px; margin: 0 auto; text-align: center; }
+                          .modal_inactive .modal__title { font-weight: 500;
+                          font-size: 16px; line-height: 22px; } .modal_inactive
+                          .modal__content { font-weight: 400; font-size: 12px;
+                          line-height: 18px; } .modal_inactive ~ .modal__button
+                          { display: none; } .modal__window { max-width: 428px;
+                          height: auto; background: var(--white); border-radius:
+                          8px; padding: 30px 40px 33px; position: absolute; top:
+                          50%; left: 50%; transform: translateX(-50%)
+                          translateY(-50%); } .modal__content { font-family:
+                          'Inter'; font-style: normal; font-weight: 400;
+                          font-size: 16px; line-height: 24px; color:
+                          var(--gray-4); } .modal__title { font-family: 'Inter';
+                          font-style: normal; font-weight: 600; font-size: 20px;
+                          line-height: 24px; color: var(--dark-blue);
+                          margin-bottom: 14px; } .modal__cross { position:
+                          absolute; top: 15px; right: 15px; color:
+                          var(--dark-blue); height: 20px; width: 20px; }
+                          .modal__cross:hover { cursor: pointer; } @media screen
+                          and (max-width: 480px) { .modal_inactive { width:
+                          150px; height: 120px; } .modal_inactive .modal__window
+                          { padding: 7px 5px 7px; max-width: 130px; }
+                          .modal_inactive .modal__title { font-weight: 400;
+                          font-size: 15px; line-height: 20px; margin-bottom:
+                          0px; } .modal_inactive .modal__content { font-weight:
+                          400; font-size: 9px; line-height: 12px; }
+                          .modal__cross { position: absolute; top: 5px; right:
+                          5px; color: var(--dark-blue); height: 12px; width:
+                          12px; } }
                         </code>
                       </div>
                     </div>
@@ -287,5 +164,6 @@
         </div>
       </footer>
     </div>
+    <script src="../components/modal/index.js"></script>
   </body>
 </html>

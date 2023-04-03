@@ -45,6 +45,7 @@
   line-height: 24px;
   color: var(--gray-3);
   padding-bottom: 8px;
+  cursor: pointer;
 }
 
 .tabs__input_all:checked ~ .tabls__scroller .tabs__label_all,

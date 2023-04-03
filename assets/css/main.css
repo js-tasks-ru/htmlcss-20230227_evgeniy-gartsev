@@ -24,6 +24,7 @@
 @import '../../components/code/code.css';
 @import '../../components/mobile_menu/mobile-menu-open.css';
 @import '../../components/mobile_menu/mobile-menu.css';
+@import '../../components/button/button.css';
 
 :root {
   --white: #ffffff;

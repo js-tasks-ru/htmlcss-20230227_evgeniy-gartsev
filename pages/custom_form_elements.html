@@ -8,10 +8,12 @@
     <div class="page">
       <header class="header header_bg-gray">
         <div class="container">
-          <div class="logo">
-            <div class="logo__square"></div>
-            <div class="logo__circle"></div>
-            <div class="logo__triangle"></div>
+          <div class="container">
+            <a class="logo" href="../index.html">
+              <div class="logo__square"></div>
+              <div class="logo__circle"></div>
+              <div class="logo__triangle"></div>
+            </a>
           </div>
         </div>
       </header>
@@ -19,13 +21,15 @@
         <div class="container component__container">
           <div class="sidebar component__sidebar">
             <h4 class="sidebar__title">Components</h4>
-            <a class="sidebar__link" href="">Modal</a>
-            <a class="sidebar__link" href="">Tooltip</a>
-            <a class="sidebar__link" href="">Avatar</a>
-            <a class="sidebar__link" href="">Calendar</a>
-            <a class="sidebar__link" href="">Histogram</a>
-            <a class="sidebar__link" href="">Custom form elements</a>
-            <a class="sidebar__link" href="">Main page</a>
+            <a class="sidebar__link" href="modal_dialog.html">Modal</a>
+            <a class="sidebar__link" href="tooltip.html">Tooltip</a>
+            <a class="sidebar__link" href="avatar.html">Avatar</a>
+            <a class="sidebar__link" href="calendar.html">Calendar</a>
+            <a class="sidebar__link" href="histogram.html">Histogram</a>
+            <a class="sidebar__link" href="custom_form_elements.html"
+              >Custom form elements</a
+            >
+            <a class="sidebar__link" href="../index.html">Main page</a>
           </div>
           <div class="component__description">
             <div class="component__view">
@@ -162,106 +166,73 @@
                     <div class="tabs__content tabs__content_second">
                       <div class="code-content">
                         <code>
-                          .checkbox {
-                            display: inline-block;
-                            position: relative;
-                          }
-                          
-                          .checkbox_inactive {
-                            pointer-events: none;
-                          }
-                          
-                          .checkbox__input {
-                            position: absolute;
-                            clip: rect(0, 0, 0, 0);
-                          }
-                          
-                          .checkbox__area {
-                            box-sizing: border-box;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 28px;
-                            height: 28px;
-                            background: var(--white);
-                            border: 1px solid var(--gray-2);
-                            border-radius: 4px;
-                          }
-                          
-                          .checkbox__label {
-                            font-family: 'Inter';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 24px;
-                            color: var(--gray-4);
-                            user-select: none;
-                          }
-                          
-                          .checkbox__icon {
-                            visibility: hidden;
-                            width: 15px;
-                            height: 13px;
-                            color: var(--white);
-                          }
-                          
-                          .checkbox__wrapper {
-                            display: flex;
-                            align-items: center;
-                            column-gap: 12px;
-                            cursor: pointer;
-                          }
-                          
-                          .checkbox__input:checked ~ .checkbox__wrapper .checkbox__area {
-                            background: var(--primary);
-                          }
-                          
-                          .checkbox__input:checked ~ .checkbox__wrapper .checkbox__icon {
-                            visibility: visible;
-                          }
-                          
-                          .checkbox__input:focus ~ .checkbox__wrapper .checkbox__label {
-                            text-decoration: underline;
-                          }
-                          
-                          .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__area {
-                            background: var(--gray-2);
-                          }
-                          
-                          .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__label {
-                            text-decoration: none;
-                          }
-                          
-                          .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__icon {
-                            visibility: hidden;
-                          }
-                          
+                          .checkbox { display: inline-block; position: relative;
+                          } .checkbox_inactive { pointer-events: none; }
+                          .checkbox__input { position: absolute; clip: rect(0,
+                          0, 0, 0); } .checkbox__area { box-sizing: border-box;
+                          display: flex; justify-content: center; align-items:
+                          center; width: 28px; height: 28px; background:
+                          var(--white); border: 1px solid var(--gray-2);
+                          border-radius: 4px; } .checkbox__label { font-family:
+                          'Inter'; font-style: normal; font-weight: 400;
+                          font-size: 16px; line-height: 24px; color:
+                          var(--gray-4); user-select: none; } .checkbox__icon {
+                          visibility: hidden; width: 15px; height: 13px; color:
+                          var(--white); } .checkbox__wrapper { display: flex;
+                          align-items: center; column-gap: 12px; cursor:
+                          pointer; } .checkbox__input:checked ~
+                          .checkbox__wrapper .checkbox__area { background:
+                          var(--primary); } .checkbox__input:checked ~
+                          .checkbox__wrapper .checkbox__icon { visibility:
+                          visible; } .checkbox__input:focus ~ .checkbox__wrapper
+                          .checkbox__label { text-decoration: underline; }
+                          .checkbox__input:disabled ~ .checkbox__wrapper
+                          .checkbox__area { background: var(--gray-2); }
+                          .checkbox__input:disabled ~ .checkbox__wrapper
+                          .checkbox__label { text-decoration: none; }
+                          .checkbox__input:disabled ~ .checkbox__wrapper
+                          .checkbox__icon { visibility: hidden; }
                           .checkbox__input:disabled ~ .checkbox__wrapper {
-                            cursor: default;
-                          }
-                          
-                          @media screen and (max-width: 480px) {
-                            .checkbox__label {
-                              font-weight: 400;
-                              font-size: 12px;
-                              line-height: 20px;
-                            }
-                          
-                            .checkbox__area {
-                              width: 18px;
-                              height: 18px;
-                            }
-                          
-                            .checkbox__icon {
-                              width: 12px;
-                              height: 10px;
-                            }
-                          
-                            .checkbox__wrapper {
-                              display: flex;
-                              flex-direction: column;
-                            }
-                          }
+                          cursor: default; } @media screen and (max-width:
+                          480px) { .checkbox__label { font-weight: 400;
+                          font-size: 12px; line-height: 20px; } .checkbox__area
+                          { width: 18px; height: 18px; } .checkbox__icon {
+                          width: 12px; height: 10px; } .checkbox__wrapper {
+                          display: flex; flex-direction: column; } }
+                        </code>
+                      </div>
+                      <div class="code-content">
+                        <code>
+                          .radio { display: inline-block; position: relative; }
+                          .radio_inactive { pointer-events: none; }
+                          .radio__input { position: absolute; clip: rect(0, 0,
+                          0, 0); } .radio__area { box-sizing: border-box;
+                          display: flex; justify-content: center; align-items:
+                          center; width: 28px; height: 28px; background:
+                          var(--white); border: 1px solid var(--gray-2);
+                          border-radius: 50%; } .radio__label { font-family:
+                          'Inter'; font-style: normal; font-weight: 400;
+                          font-size: 16px; line-height: 24px; color:
+                          var(--gray-4); user-select: none; } .radio__icon {
+                          visibility: hidden; width: 18px; height: 18px;
+                          border-radius: 50%; background: var(--primary); }
+                          .radio__wrapper { display: flex; align-items: center;
+                          column-gap: 12px; cursor: pointer; }
+                          .radio__input:checked ~ .radio__wrapper .radio__icon {
+                          visibility: visible; } .radio__input:focus ~
+                          .radio__wrapper .radio__label { text-decoration:
+                          underline; } .radio__input:disabled ~ .radio__wrapper
+                          .radio__area { background: var(--gray-2); }
+                          .radio__input:disabled ~ .radio__wrapper .radio__label
+                          { text-decoration: none; } .radio__input:disabled ~
+                          .radio__wrapper .radio__icon { visibility: hidden; }
+                          .radio__input:disabled ~ .radio__wrapper { cursor:
+                          default; } @media screen and (max-width: 480px) {
+                          .radio__label { font-weight: 400; font-size: 12px;
+                          line-height: 20px; } .radio__area { width: 18px;
+                          height: 18px; } .radio__icon { width: 12px; height:
+                          12px; } .radio__wrapper { display: flex;
+                          flex-direction: column; } }
                         </code>
                       </div>
                     </div>
