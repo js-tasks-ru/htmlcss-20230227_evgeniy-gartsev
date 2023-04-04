@@ -19,24 +19,336 @@
       <main class="content">
         <div class="container">
           <div class="content__container">
-            <div class="card">
-              <h3 class="card__title">Tooltip</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__title">Custom form elements</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__title">Calendar</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__title">Modal dialog</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__title">Histogram</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__title">Avatar</h3>
-            </div>
+            <a class="card">
+              <div class="card__content">
+                <div class="tooltip tooltip_visible">
+                  <div class="tooltip__bubble">
+                    <span class="tooltip__title">Helper Text</span>
+                  </div>
+                  <svg class="tooltip__trigger">
+                    <use href="../../assets/images/icons.svg#question"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__description">
+                <h3 class="card__title">Tooltip</h3>
+                <h4 class="card__title-little">Container</h4>
+              </div>
+            </a>
+
+            <a class="card">
+              <div class="card__content">
+                <div class="card__checkboxes">
+                  <label class="checkbox checkbox_inactive">
+                    <input type="checkbox" class="checkbox__input" />
+                    <div class="checkbox__wrapper">
+                      <div class="checkbox__area">
+                        <svg class="checkbox__icon">
+                          <use href="../../assets/images/icons.svg#check"></use>
+                        </svg>
+                      </div>
+                      <h4 class="checkbox__label">Default</h4>
+                    </div>
+                  </label>
+                  <label class="checkbox checkbox_inactive">
+                    <input type="checkbox" class="checkbox__input" checked />
+                    <div class="checkbox__wrapper">
+                      <div class="checkbox__area">
+                        <svg class="checkbox__icon">
+                          <use href="../../assets/images/icons.svg#check"></use>
+                        </svg>
+                      </div>
+                      <h4 class="checkbox__label">Checked</h4>
+                    </div>
+                  </label>
+                  <label class="checkbox checkbox_inactive">
+                    <input type="checkbox" class="checkbox__input" disabled />
+                    <div class="checkbox__wrapper">
+                      <div class="checkbox__area">
+                        <svg class="checkbox__icon">
+                          <use href="../../assets/images/icons.svg#check"></use>
+                        </svg>
+                      </div>
+                      <h4 class="checkbox__label">Disabled</h4>
+                    </div>
+                  </label>
+                  <label class="radio radio_inactive">
+                    <input type="radio" class="radio__input" />
+                    <div class="radio__wrapper">
+                      <div class="radio__area">
+                        <div class="radio__icon"></div>
+                      </div>
+                      <h4 class="radio__label">Default</h4>
+                    </div>
+                  </label>
+                  <label class="radio radio_inactive">
+                    <input type="radio" class="radio__input" checked />
+                    <div class="radio__wrapper">
+                      <div class="radio__area">
+                        <div class="radio__icon"></div>
+                      </div>
+                      <h4 class="radio__label">Selected</h4>
+                    </div>
+                  </label>
+                  <label class="radio radio_inactive">
+                    <input type="radio" class="radio__input" disabled />
+                    <div class="radio__wrapper">
+                      <div class="radio__area">
+                        <div class="radio__icon"></div>
+                      </div>
+                      <h4 class="radio__label">Disabled</h4>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="card__description">
+                <h3 class="card__title">Custom form elements</h3>
+                <h4 class="card__title-little">Element</h4>
+              </div>
+            </a>
+
+            <a class="card">
+              <div class="card__content">
+                <div class="calendar">
+                  <h3 class="calendar__title">October 2019</h3>
+                  <div class="calendar__wrapper">
+                    <div class="calendar__content">
+                      <span class="calendar__weekday">Mon</span>
+                      <span class="calendar__weekday">Tue</span>
+                      <span class="calendar__weekday">Wed</span>
+                      <span class="calendar__weekday">Thu</span>
+                      <span class="calendar__weekday">Fri</span>
+                      <span class="calendar__weekday">Sat</span>
+                      <span class="calendar__weekday">Sun</span>
+                      <span class="calendar__day"></span>
+                      <span class="calendar__day"></span>
+                      <span class="calendar__day"></span>
+                      <span class="calendar__day"></span>
+                      <span class="calendar__day">1</span>
+                      <span class="calendar__day">2</span>
+                      <span class="calendar__day">3</span>
+                      <span class="calendar__day">4</span>
+                      <span class="calendar__day">5</span>
+                      <span class="calendar__day">6</span>
+                      <span class="calendar__day">7</span>
+                      <span class="calendar__day">8</span>
+                      <span class="calendar__day">9</span>
+                      <span class="calendar__day">10</span>
+                      <span class="calendar__day">11</span>
+                      <span class="calendar__day">12</span>
+                      <span class="calendar__day">13</span>
+                      <span class="calendar__day">14</span>
+                      <span class="calendar__day">15</span>
+                      <span class="calendar__day">16</span>
+                      <span class="calendar__day">17</span>
+                      <span class="calendar__day calendar__day_blue">18</span>
+                      <span class="calendar__day calendar__day_light-blue"
+                        >19</span
+                      >
+                      <span class="calendar__day calendar__day_light-blue"
+                        >20</span
+                      >
+                      <span class="calendar__day calendar__day_light-blue"
+                        >21</span
+                      >
+                      <span class="calendar__day calendar__day_light-blue"
+                        >22</span
+                      >
+                      <span class="calendar__day calendar__day_blue">23</span>
+                      <span class="calendar__day">24</span>
+                      <span class="calendar__day">25</span>
+                      <span class="calendar__day">26</span>
+                      <span class="calendar__day">27</span>
+                      <span class="calendar__day">28</span>
+                      <span class="calendar__day">29</span>
+                      <span class="calendar__day">30</span>
+                      <span class="calendar__day">31</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__description">
+                <h3 class="card__title">Calendar</h3>
+                <h4 class="card__title-little">Container</h4>
+              </div>
+            </a>
+
+            <a class="card">
+              <div class="card__content">
+                <div class="modal modal_inactive" id="modal">
+                  <div class="modal__window">
+                    <svg class="modal__cross" id="modal-close">
+                      <use href="../../assets/images/icons.svg#cross"></use>
+                    </svg>
+                    <h3 class="modal__title">Modal title</h3>
+                    <p class="modal__content">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__description">
+                <h3 class="card__title">Modal dialog</h3>
+                <h4 class="card__title-little">Container</h4>
+              </div>
+            </a>
+
+            <a class="card">
+              <div class="card__content">
+                <div class="histogram histogram_inactive">
+                  <div class="histogram__header">
+                    <h3 class="histogram__title">Total orders</h3>
+                    <h4 class="histogram__view">View all</h4>
+                  </div>
+                  <h4 class="histogram__score">50254</h4>
+                  <div class="histogram__chart">
+                    <div class="histogram__chart-block"></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 80%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 30%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 70%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 50%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 40%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 90%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 5%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 20%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 40%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 60%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 40%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 30%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 100%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 90%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 70%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 40%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 60%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 90%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 80%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 90%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 30%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 100%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 50%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 60%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 70%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 60%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 40%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 70%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 80%"
+                    ></div>
+                    <div
+                      class="histogram__chart-block"
+                      style="height: 60%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__description">
+                <h3 class="card__title">Histogram</h3>
+                <h4 class="card__title-little">Element</h4>
+              </div>
+            </a>
+
+            <a class="card">
+              <div class="card__content">
+                <div class="avatar">
+                  <img
+                    class="avatar__img"
+                    src="./assets/images/avatar-200.jpg"
+                    alt="Avatar"
+                  />
+                </div>
+              </div>
+              <div class="card__description">
+                <h3 class="card__title">Avatar</h3>
+                <h4 class="card__title-little">Element</h4>
+              </div>
+            </a>
           </div>
         </div>
       </main>

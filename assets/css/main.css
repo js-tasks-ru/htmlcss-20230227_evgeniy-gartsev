@@ -10,6 +10,14 @@
 @import '../../components/sidebar/sidebar.css';
 @import '../../components/card/card.css';
 @import '../../components/logo/logo.css';
+@import '../../components/tooltip/tooltip.css';
+@import '../../components/checkbox/checkbox.css';
+@import '../../components/radio/radio.css';
+@import '../../components/calendar/calendar.css';
+@import '../../components/histogram/histogram.css';
+@import '../../components/avatar/avatar.css';
+@import '../../components/toggler/toggler.css';
+@import '../../components/modal/modal.css';
 @import '../../components/toggler/toggler.css';
 
 :root {
