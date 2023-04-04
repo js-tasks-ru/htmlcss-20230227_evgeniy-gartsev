@@ -2,7 +2,7 @@
   display: block;
   width: 350px;
   height: 367px;
-  background-color: var(--white);
+  background-color: var(--main-bg);
   box-shadow: 0px 2px 4px var(--black);
   border-radius: 12px;
   cursor: pointer;
@@ -41,7 +41,7 @@
   font-size: 21px;
   line-height: 25px;
   text-align: center;
-  color: var(--black);
+  color: var(--main-text);
 }
 
 .card__title-little {

@@ -8,10 +8,29 @@
     <div class="page">
       <header class="header">
         <div class="container">
-          <div class="logo">
-            <div class="logo__square"></div>
-            <div class="logo__circle"></div>
-            <div class="logo__triangle"></div>
+          <div class="header__top">
+            <div class="logo">
+              <div class="logo__square"></div>
+              <div class="logo__circle"></div>
+              <div class="logo__triangle"></div>
+            </div>
+            <div class="theme-switch">
+              <svg class="theme-switch__sun">
+                <use href="./assets/images/icons.svg#sun"></use>
+              </svg>
+              <label class="toggler toggler_hidden-title">
+                <input type="checkbox" class="toggler__input" id="theme-changer" />
+                <div class="toggler__wrapper">
+                  <div class="toggler__area">
+                    <div class="toggler__icon"></div>
+                  </div>
+                  <h4 class="toggler__label">Default</h4>
+                </div>
+              </label>
+              <svg class="theme-switch__moon">
+                <use href="./assets/images/icons.svg#moon"></use>
+              </svg>
+            </div>
           </div>
           <h1 class="header-title header__title">Reusable component library</h1>
         </div>
@@ -367,5 +386,6 @@
         </div>
       </footer>
     </div>
+    <script src="./assets/scripts/theme-changer.js"></script>
   </body>
 </html>

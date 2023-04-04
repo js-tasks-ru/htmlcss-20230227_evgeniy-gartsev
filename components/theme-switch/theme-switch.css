@@ -1,0 +1,15 @@
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.theme-switch__sun {
+  width: 24px;
+  height: 24px;
+}
+
+.theme-switch__moon {
+  width: 24px;
+  height: 24px;
+}
