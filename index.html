@@ -18,6 +18,22 @@
           </div>
         </div>
         <div class="mobile-menu__wrapper">
+          <div class="mobile-menu__mode">
+            <h4 class="mobile-menu__mode-title">Dark mode</h4>
+            <label class="toggler toggler_hidden-title">
+              <input
+                type="checkbox"
+                class="toggler__input"
+                id="theme-changer"
+              />
+              <div class="toggler__wrapper">
+                <div class="toggler__area">
+                  <div class="toggler__icon"></div>
+                </div>
+                <h4 class="toggler__label">Default</h4>
+              </div>
+            </label>
+          </div>
           <div class="mobile-menu__manage">
             <h4 class="mobile-menu__manage-title">Elements</h4>
             <div class="mobile-menu__manage-items">
@@ -44,13 +60,37 @@
       <header class="header">
         <div class="container">
           <div class="header__top">
-            <svg class="mobile-menu-open header__top_left" id="burger-menu-open">
+            <svg
+              class="mobile-menu-open header__top_left"
+              id="burger-menu-open"
+            >
               <use href="assets/images/icons.svg#burger-button"></use>
             </svg>
             <div class="logo">
               <div class="logo__square"></div>
               <div class="logo__circle"></div>
               <div class="logo__triangle"></div>
+            </div>
+            <div class="theme-switch">
+              <svg class="theme-switch__sun">
+                <use href="./assets/images/icons.svg#sun"></use>
+              </svg>
+              <label class="toggler toggler_hidden-title">
+                <input
+                  type="checkbox"
+                  class="toggler__input"
+                  id="theme-changer"
+                />
+                <div class="toggler__wrapper">
+                  <div class="toggler__area">
+                    <div class="toggler__icon"></div>
+                  </div>
+                  <h4 class="toggler__label">Default</h4>
+                </div>
+              </label>
+              <svg class="theme-switch__moon">
+                <use href="./assets/images/icons.svg#moon"></use>
+              </svg>
             </div>
           </div>
           <h1 class="header-title header__title">Reusable component library</h1>
@@ -97,7 +137,10 @@
         <main class="tabs__container">
           <div class="container">
             <div class="tabs__wrapper">
-              <a class="card tabs__content tabs__content_first" href="pages/tooltip.html">
+              <a
+                class="card tabs__content tabs__content_first"
+                href="pages/tooltip.html"
+              >
                 <div class="card__content">
                   <div class="tooltip tooltip_visible">
                     <div class="tooltip__bubble">
@@ -192,7 +235,10 @@
                   <h4 class="card__title-little">Element</h4>
                 </div>
               </a>
-              <a class="card tabs__content tabs__content_first" href="pages/calendar.html">
+              <a
+                class="card tabs__content tabs__content_first"
+                href="pages/calendar.html"
+              >
                 <div class="card__content">
                   <div class="calendar">
                     <h3 class="calendar__title">October 2019</h3>
@@ -257,7 +303,10 @@
                   <h4 class="card__title-little">Container</h4>
                 </div>
               </a>
-              <a class="card tabs__content tabs__content_first" href="pages/modal_dialog.html">
+              <a
+                class="card tabs__content tabs__content_first"
+                href="pages/modal_dialog.html"
+              >
                 <div class="card__content">
                   <div class="modal modal_inactive" id="modal">
                     <div class="modal__window">
@@ -278,7 +327,10 @@
                   <h4 class="card__title-little">Container</h4>
                 </div>
               </a>
-              <a class="card tabs__content tabs__content_second" href="pages/histogram.html">
+              <a
+                class="card tabs__content tabs__content_second"
+                href="pages/histogram.html"
+              >
                 <div class="card__content">
                   <div class="histogram histogram_inactive">
                     <div class="histogram__header">
@@ -416,7 +468,10 @@
                   <h4 class="card__title-little">Element</h4>
                 </div>
               </a>
-              <a class="card tabs__content tabs__content_second" href="pages/avatar.html">
+              <a
+                class="card tabs__content tabs__content_second"
+                href="pages/avatar.html"
+              >
                 <div class="card__content">
                   <div class="avatar">
                     <img
@@ -452,5 +507,6 @@
       </footer>
     </div>
     <script src="./components/mobile_menu/mobile-menu.js"></script>
+    <script src="./assets/scripts/theme-changer.js"></script>
   </body>
 </html>

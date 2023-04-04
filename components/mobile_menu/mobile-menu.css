@@ -38,6 +38,25 @@
   padding: 0 16px 43px;
 }
 
+.mobile-menu__mode {
+  height: 76px;
+  border: 1px solid transparent;
+  border-top-color: var(--gray-2);
+  border-bottom-color: var(--gray-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu__mode-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-4);
+}
+
 .mobile-menu__wrapper .mobile-menu__manage:last-child {
   border: 1px solid transparent;
   border-top-color: var(--gray-2);

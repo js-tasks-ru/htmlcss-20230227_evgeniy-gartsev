@@ -25,6 +25,7 @@
 @import '../../components/mobile_menu/mobile-menu-open.css';
 @import '../../components/mobile_menu/mobile-menu.css';
 @import '../../components/button/button.css';
+@import '../../components/theme-switch/theme-switch.css';
 
 :root {
   --white: #ffffff;
@@ -42,10 +43,21 @@
   --primary: var(--blue);
   --secondary: var(--purple);
   --alternate: var(--white);
+  --main-bg: var(--white);
+  --main-bg-alternate: var(--black);
+  --main-bg-light: var(--gray-1);
+  --main-text: var(--black);
 
   --primary-hover: #2342c0;
   --secondary-hover: #5028c6;
   --alternate-hover: var(--black);
+}
+
+html[data-theme-dark] {
+  --main-bg: var(--black);
+  --main-text: var(--gray-4);
+  --main-bg-alternate: var(--white);
+  --main-bg-light: var(--gray-4);
 }
 
 * {
