@@ -1,5 +1,5 @@
 .tabs {
-  background: var(--white);
+  background: var(--main-bg);
 }
 
 .tabs_component .tabs__container {
@@ -7,7 +7,7 @@
 }
 
 .tabs__container {
-  background-color: var(--gray-1);
+  background-color: var(--main-bg-light);
   border-top: 1px solid var(--gray-2);
   padding-top: 32px;
   padding-left: 48px;
@@ -52,8 +52,8 @@
 .tabs__input_first:checked ~ .tabls__scroller .tabs__label_first,
 .tabs__input_second:checked ~ .tabls__scroller .tabs__label_second,
 .tabs__input_third:checked ~ .tabls__scroller .tabs__label_third {
-  color: var(--black);
-  border-bottom: 5px solid var(--black);
+  color: var(--main-bg-alternate);
+  border-bottom: 5px solid var(--main-bg-alternate);
 }
 
 .tabs_.tabs__container,

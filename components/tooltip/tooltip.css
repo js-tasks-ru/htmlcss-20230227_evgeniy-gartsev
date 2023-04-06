@@ -53,7 +53,7 @@
 }
 
 .tooltip__trigger {
-  color: var(--black);
+  color: var(--primary);
   width: 22px;
   height: 22px;
 }

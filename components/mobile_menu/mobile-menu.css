@@ -1,6 +1,6 @@
 .mobile-menu {
   display: none;
-  background: #f9fafc;
+  background: var(--main-bg);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -20,7 +20,7 @@
 .mobile-menu__close {
   width: 32px;
   height: 32px;
-  color: var(--gray-2);
+  color: var(--border-dark);
   position: absolute;
   top: 50%;
   left: 12px;
@@ -54,7 +54,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--gray-4);
+  color: var(--border-light);
 }
 
 .mobile-menu__wrapper .mobile-menu__manage:last-child {
@@ -90,7 +90,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--black);
+  color: var(--main-bg-alternate);
 }
 
 .mobile-menu__manage-item:active {
