@@ -1,0 +1,122 @@
+.modal {
+  background: rgba(196, 196, 196, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.modal_inactive {
+  width: 284px;
+  height: 222px;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.modal_inactive .modal__window {
+  position: static;
+  transform: translateX(0) translateY(0);
+  padding: 15px 20px 15px;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal_inactive .modal__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal_inactive .modal__content {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.modal_inactive ~ .modal__button {
+  display: none;
+}
+
+.modal__window {
+  max-width: 428px;
+  height: auto;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 30px 40px 33px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal__content {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-4);
+}
+
+.modal__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--dark-blue);
+  margin-bottom: 14px;
+}
+
+.modal__cross {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: var(--dark-blue);
+  height: 20px;
+  width: 20px;
+}
+
+.modal__cross:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .modal_inactive {
+    width: 150px;
+    height: 120px;
+  }
+
+  .modal_inactive .modal__window {
+    padding: 7px 5px 7px;
+    max-width: 130px;
+  }
+
+  .modal_inactive .modal__title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+
+  .modal_inactive .modal__content {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .modal__cross {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: var(--dark-blue);
+    height: 12px;
+    width: 12px;
+  }
+}
