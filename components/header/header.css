@@ -1,6 +1,7 @@
 .header {
   background-color: var(--main-bg);
   padding-top: 25px;
+  padding-bottom: 77px;
 }
 
 .header__top {
