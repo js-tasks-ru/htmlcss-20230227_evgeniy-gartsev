@@ -6,15 +6,101 @@
   </head>
   <body>
     <div class="page">
-      <header class="header header_bg-gray">
+      <div class="mobile-menu" id="burger-menu">
+        <div class="mobile-menu__top">
+          <svg class="mobile-menu__close" id="burger-menu-close">
+            <use href="../../assets/images/icons.svg#close-button"></use>
+          </svg>
+          <div class="logo mobile-menu__logo">
+            <div class="logo__square"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </div>
+        </div>
+        <div class="mobile-menu__wrapper">
+          <div class="mobile-menu__mode">
+            <h4 class="mobile-menu__mode-title">Dark mode</h4>
+            <label class="toggler toggler_hidden-title">
+              <input
+                type="checkbox"
+                class="toggler__input"
+                id="theme-changer-mobile"
+              />
+              <div class="toggler__wrapper">
+                <div class="toggler__area">
+                  <div class="toggler__icon"></div>
+                </div>
+                <h4 class="toggler__label">Default</h4>
+              </div>
+            </label>
+          </div>
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Elements</h4>
+            <div class="mobile-menu__manage-items">
+              <a
+                href="custom_form_elements.html"
+                class="mobile-menu__manage-item"
+                >Custom form elements</a
+              >
+              <a href="tooltip.html" class="mobile-menu__manage-item"
+                >Tooltip</a
+              >
+              <a href="avatar.html" class="mobile-menu__manage-item">Avatar</a>
+            </div>
+          </div>
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Containers</h4>
+            <div class="mobile-menu__manage-items">
+              <a href="histogram.html" class="mobile-menu__manage-item"
+                >Histogram</a
+              >
+              <a href="modal_dialog.html" class="mobile-menu__manage-item"
+                >Modal</a
+              >
+              <a href="calendar.html" class="mobile-menu__manage-item"
+                >Calendar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header header_component">
         <div class="container">
-          <div class="container">
-            <a class="logo" href="../index.html">
+          <div class="header__top">
+            <svg
+              class="mobile-menu-open header__top_left"
+              id="burger-menu-open"
+            >
+              <use href="../assets/images/icons.svg#burger-button"></use>
+            </svg>
+            <div class="logo">
               <div class="logo__square"></div>
               <div class="logo__circle"></div>
               <div class="logo__triangle"></div>
-            </a>
+            </div>
+            <div class="theme-switch">
+              <svg class="theme-switch__sun">
+                <use href="../assets/images/icons.svg#sun"></use>
+              </svg>
+              <label class="toggler toggler_hidden-title">
+                <input
+                  type="checkbox"
+                  class="toggler__input"
+                  id="theme-changer"
+                />
+                <div class="toggler__wrapper">
+                  <div class="toggler__area">
+                    <div class="toggler__icon"></div>
+                  </div>
+                  <h4 class="toggler__label">Default</h4>
+                </div>
+              </label>
+              <svg class="theme-switch__moon">
+                <use href="../assets/images/icons.svg#moon"></use>
+              </svg>
+            </div>
           </div>
+          <h1 class="header-title header__title">Reusable component library</h1>
         </div>
       </header>
       <div class="component">
@@ -142,7 +228,7 @@
                             class=&quot;checkbox__wrapper&quot;&gt; &lt;div
                             class=&quot;checkbox__area&quot;&gt; &lt;svg
                             class=&quot;checkbox__icon&quot;&gt; &lt;use
-                            href=&quot;../../assets/images/icons.svg#check&quot;&gt;&lt;/use&gt;
+                            &lt;/use&gt;
                             &lt;/svg&gt; &lt;/div&gt; &lt;h4
                             class=&quot;checkbox__label&quot;&gt;Default&lt;/h4&gt;
                             &lt;/div&gt; &lt;/label&gt;</code
@@ -164,76 +250,78 @@
                       </div>
                     </div>
                     <div class="tabs__content tabs__content_second">
-                      <div class="code-content">
-                        <code>
-                          .checkbox { display: inline-block; position: relative;
-                          } .checkbox_inactive { pointer-events: none; }
-                          .checkbox__input { position: absolute; clip: rect(0,
-                          0, 0, 0); } .checkbox__area { box-sizing: border-box;
-                          display: flex; justify-content: center; align-items:
-                          center; width: 28px; height: 28px; background:
-                          var(--white); border: 1px solid var(--gray-2);
-                          border-radius: 4px; } .checkbox__label { font-family:
-                          'Inter'; font-style: normal; font-weight: 400;
-                          font-size: 16px; line-height: 24px; color:
-                          var(--gray-4); user-select: none; } .checkbox__icon {
-                          visibility: hidden; width: 15px; height: 13px; color:
-                          var(--white); } .checkbox__wrapper { display: flex;
-                          align-items: center; column-gap: 12px; cursor:
-                          pointer; } .checkbox__input:checked ~
-                          .checkbox__wrapper .checkbox__area { background:
-                          var(--primary); } .checkbox__input:checked ~
-                          .checkbox__wrapper .checkbox__icon { visibility:
-                          visible; } .checkbox__input:focus ~ .checkbox__wrapper
-                          .checkbox__label { text-decoration: underline; }
-                          .checkbox__input:disabled ~ .checkbox__wrapper
-                          .checkbox__area { background: var(--gray-2); }
-                          .checkbox__input:disabled ~ .checkbox__wrapper
-                          .checkbox__label { text-decoration: none; }
-                          .checkbox__input:disabled ~ .checkbox__wrapper
-                          .checkbox__icon { visibility: hidden; }
-                          .checkbox__input:disabled ~ .checkbox__wrapper {
-                          cursor: default; } @media screen and (max-width:
-                          480px) { .checkbox__label { font-weight: 400;
-                          font-size: 12px; line-height: 20px; } .checkbox__area
-                          { width: 18px; height: 18px; } .checkbox__icon {
-                          width: 12px; height: 10px; } .checkbox__wrapper {
-                          display: flex; flex-direction: column; } }
-                        </code>
-                      </div>
-                      <div class="code-content">
-                        <code>
-                          .radio { display: inline-block; position: relative; }
-                          .radio_inactive { pointer-events: none; }
-                          .radio__input { position: absolute; clip: rect(0, 0,
-                          0, 0); } .radio__area { box-sizing: border-box;
-                          display: flex; justify-content: center; align-items:
-                          center; width: 28px; height: 28px; background:
-                          var(--white); border: 1px solid var(--gray-2);
-                          border-radius: 50%; } .radio__label { font-family:
-                          'Inter'; font-style: normal; font-weight: 400;
-                          font-size: 16px; line-height: 24px; color:
-                          var(--gray-4); user-select: none; } .radio__icon {
-                          visibility: hidden; width: 18px; height: 18px;
-                          border-radius: 50%; background: var(--primary); }
-                          .radio__wrapper { display: flex; align-items: center;
-                          column-gap: 12px; cursor: pointer; }
-                          .radio__input:checked ~ .radio__wrapper .radio__icon {
-                          visibility: visible; } .radio__input:focus ~
-                          .radio__wrapper .radio__label { text-decoration:
-                          underline; } .radio__input:disabled ~ .radio__wrapper
-                          .radio__area { background: var(--gray-2); }
-                          .radio__input:disabled ~ .radio__wrapper .radio__label
-                          { text-decoration: none; } .radio__input:disabled ~
-                          .radio__wrapper .radio__icon { visibility: hidden; }
-                          .radio__input:disabled ~ .radio__wrapper { cursor:
-                          default; } @media screen and (max-width: 480px) {
-                          .radio__label { font-weight: 400; font-size: 12px;
-                          line-height: 20px; } .radio__area { width: 18px;
-                          height: 18px; } .radio__icon { width: 12px; height:
-                          12px; } .radio__wrapper { display: flex;
-                          flex-direction: column; } }
-                        </code>
+                      <div class="code">
+                        <div class="code__content">
+                          <code>
+                            .checkbox { display: inline-block; position: relative;
+                            } .checkbox_inactive { pointer-events: none; }
+                            .checkbox__input { position: absolute; clip: rect(0,
+                            0, 0, 0); } .checkbox__area { box-sizing: border-box;
+                            display: flex; justify-content: center; align-items:
+                            center; width: 28px; height: 28px; background:
+                            var(--white); border: 1px solid var(--gray-2);
+                            border-radius: 4px; } .checkbox__label { font-family:
+                            'Inter'; font-style: normal; font-weight: 400;
+                            font-size: 16px; line-height: 24px; color:
+                            var(--gray-4); user-select: none; } .checkbox__icon {
+                            visibility: hidden; width: 15px; height: 13px; color:
+                            var(--white); } .checkbox__wrapper { display: flex;
+                            align-items: center; column-gap: 12px; cursor:
+                            pointer; } .checkbox__input:checked ~
+                            .checkbox__wrapper .checkbox__area { background:
+                            var(--primary); } .checkbox__input:checked ~
+                            .checkbox__wrapper .checkbox__icon { visibility:
+                            visible; } .checkbox__input:focus ~ .checkbox__wrapper
+                            .checkbox__label { text-decoration: underline; }
+                            .checkbox__input:disabled ~ .checkbox__wrapper
+                            .checkbox__area { background: var(--gray-2); }
+                            .checkbox__input:disabled ~ .checkbox__wrapper
+                            .checkbox__label { text-decoration: none; }
+                            .checkbox__input:disabled ~ .checkbox__wrapper
+                            .checkbox__icon { visibility: hidden; }
+                            .checkbox__input:disabled ~ .checkbox__wrapper {
+                            cursor: default; } @media screen and (max-width:
+                            480px) { .checkbox__label { font-weight: 400;
+                            font-size: 12px; line-height: 20px; } .checkbox__area
+                            { width: 18px; height: 18px; } .checkbox__icon {
+                            width: 12px; height: 10px; } .checkbox__wrapper {
+                            display: flex; flex-direction: column; } }
+                          </code>
+                        </div>
+                        <div class="code__content">
+                          <code>
+                            .radio { display: inline-block; position: relative; }
+                            .radio_inactive { pointer-events: none; }
+                            .radio__input { position: absolute; clip: rect(0, 0,
+                            0, 0); } .radio__area { box-sizing: border-box;
+                            display: flex; justify-content: center; align-items:
+                            center; width: 28px; height: 28px; background:
+                            var(--white); border: 1px solid var(--gray-2);
+                            border-radius: 50%; } .radio__label { font-family:
+                            'Inter'; font-style: normal; font-weight: 400;
+                            font-size: 16px; line-height: 24px; color:
+                            var(--gray-4); user-select: none; } .radio__icon {
+                            visibility: hidden; width: 18px; height: 18px;
+                            border-radius: 50%; background: var(--primary); }
+                            .radio__wrapper { display: flex; align-items: center;
+                            column-gap: 12px; cursor: pointer; }
+                            .radio__input:checked ~ .radio__wrapper .radio__icon {
+                            visibility: visible; } .radio__input:focus ~
+                            .radio__wrapper .radio__label { text-decoration:
+                            underline; } .radio__input:disabled ~ .radio__wrapper
+                            .radio__area { background: var(--gray-2); }
+                            .radio__input:disabled ~ .radio__wrapper .radio__label
+                            { text-decoration: none; } .radio__input:disabled ~
+                            .radio__wrapper .radio__icon { visibility: hidden; }
+                            .radio__input:disabled ~ .radio__wrapper { cursor:
+                            default; } @media screen and (max-width: 480px) {
+                            .radio__label { font-weight: 400; font-size: 12px;
+                            line-height: 20px; } .radio__area { width: 18px;
+                            height: 18px; } .radio__icon { width: 12px; height:
+                            12px; } .radio__wrapper { display: flex;
+                            flex-direction: column; } }
+                          </code>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -258,5 +346,7 @@
         </div>
       </footer>
     </div>
+    <script src="../assets/scripts/mobile-menu.js"></script>
+    <script src="../assets/scripts/theme-changer.js"></script>
   </body>
 </html>

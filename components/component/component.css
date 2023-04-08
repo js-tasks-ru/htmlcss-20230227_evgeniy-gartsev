@@ -1,5 +1,5 @@
 .component {
-  background: var(--gray-1);
+  background: var(--main-bg-light);
   padding-top: 36px;
   padding-bottom: 165px;
 }
@@ -44,7 +44,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  color: var(--gray-4);
+  color: var(--border-light);
   margin-bottom: 58px;
 }
 
@@ -62,6 +62,11 @@
   }
 
   .component__title {
-    color: var(--gray-4);
+    color: var(--border-light);
+  }
+
+  .component__checkbox-container{
+    width: 200px;
+    height: 150px;
   }
 }

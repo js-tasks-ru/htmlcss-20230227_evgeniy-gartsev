@@ -3,7 +3,7 @@
 }
 
 .tabs_component .tabs__container {
-  background: var(--white);
+  background: var(--main-bg);
 }
 
 .tabs__container {
@@ -28,8 +28,7 @@
   column-gap: 40px;
   max-width: 1110px;
   margin: 0 auto;
-  padding-top: 32px;
-  padding-left: 48px;
+  padding-left: 38px;
 }
 
 .tabs__input {
@@ -80,7 +79,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .tabls__scroller {
+  .tabls__scroller:not(.tabs_component .tabls__scroller) {
     display: none;
   }
 

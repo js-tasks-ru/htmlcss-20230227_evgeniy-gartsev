@@ -6,15 +6,105 @@
   </head>
   <body>
     <div class="page">
-      <header class="header header_bg-gray">
+      <div class="mobile-menu" id="burger-menu">
+        <div class="mobile-menu__top">
+          <svg class="mobile-menu__close" id="burger-menu-close">
+            <use href="../../assets/images/icons.svg#close-button"></use>
+          </svg>
+          <div class="logo mobile-menu__logo">
+            <div class="logo__square"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </div>
+        </div>
+        <div class="mobile-menu__wrapper">
+          <div class="mobile-menu__mode">
+            <h4 class="mobile-menu__mode-title">Dark mode</h4>
+            <label class="toggler toggler_hidden-title">
+              <input
+                type="checkbox"
+                class="toggler__input"
+                id="theme-changer-mobile"
+              />
+              <div class="toggler__wrapper">
+                <div class="toggler__area">
+                  <div class="toggler__icon"></div>
+                </div>
+                <h4 class="toggler__label">Default</h4>
+              </div>
+            </label>
+          </div>
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Elements</h4>
+            <div class="mobile-menu__manage-items">
+              <a
+                href="custom_form_elements.html"
+                class="mobile-menu__manage-item"
+                >Custom form elements</a
+              >
+              <a href="tooltip.html" class="mobile-menu__manage-item"
+                >Tooltip</a
+              >
+              <a href="avatar.html" class="mobile-menu__manage-item"
+                >Avatar</a
+              >
+            </div>
+          </div>
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Containers</h4>
+            <div class="mobile-menu__manage-items">
+              <a href="histogram.html" class="mobile-menu__manage-item"
+                >Histogram</a
+              >
+              <a
+                href="modal_dialog.html"
+                class="mobile-menu__manage-item"
+                >Modal</a
+              >
+              <a href="calendar.html" class="mobile-menu__manage-item"
+                >Calendar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header header_component">
         <div class="container">
-          <div class="container">
-            <a class="logo" href="../index.html">
+          <div class="header__top">
+            <svg
+              class="mobile-menu-open header__top_left"
+              id="burger-menu-open"
+            >
+              <use href="../assets/images/icons.svg#burger-button"></use>
+            </svg>
+            <div class="logo">
               <div class="logo__square"></div>
               <div class="logo__circle"></div>
               <div class="logo__triangle"></div>
-            </a>
+            </div>
+            <div class="theme-switch">
+              <svg class="theme-switch__sun">
+                <use href="../assets/images/icons.svg#sun"></use>
+              </svg>
+              <label class="toggler toggler_hidden-title">
+                <input
+                  type="checkbox"
+                  class="toggler__input"
+                  id="theme-changer"
+                />
+                <div class="toggler__wrapper">
+                  <div class="toggler__area">
+                    <div class="toggler__icon"></div>
+                  </div>
+                  <h4 class="toggler__label">Default</h4>
+                </div>
+              </label>
+              <svg class="theme-switch__moon">
+                <use href="../assets/images/icons.svg#moon"></use>
+              </svg>
+            </div>
           </div>
+          <h1 class="header-title header__title">Reusable component library</h1>
         </div>
       </header>
       <div class="component">
@@ -76,43 +166,45 @@
                           <code>
                             &lt;div class=&quot;tooltip&quot;&gt; &lt;svg
                             class=&quot;tooltip__trigger&quot;&gt; &lt;use
-                            href=&quot;../../assets/images/icons.svg#question&quot;&gt;&lt;/use&gt;
-                            &lt;/svg&gt; &lt;div
-                            class=&quot;tooltip__bubble&quot;&gt; &lt;span
-                            class=&quot;tooltip__title&quot;&gt;Helper
+                            href=&quot;../../assets/images/icons.
+                            svg#question&quot;&gt;&lt;/use&gt; &lt;/svg&gt;
+                            &lt;div class=&quot;tooltip__bubble&quot;&gt;
+                            &lt;span class=&quot;tooltip__title&quot;&gt;Helper
                             Text&lt;/span&gt; &lt;/div&gt; &lt;/div&gt;</code
                           >
                         </div>
                       </div>
                     </div>
                     <div class="tabs__content tabs__content_second">
-                      <div class="code-content">
-                        <code>
-                          .tooltip { display: inline-block; position: relative;
-                          } .tooltip_visible { text-align: center; }
-                          .tooltip_visible .tooltip__bubble { visibility:
-                          visible; } .tooltip_visible .tooltip__bubble {
-                          position: static; transform: translateX(0); }
-                          .tooltip_visible .tooltip__trigger { margin-top: 13px;
-                          } .tooltip__bubble { visibility: hidden; position:
-                          absolute; bottom: calc(100% + 14px); left: 50%;
-                          transform: translateX(-50%); background:
-                          var(--primary); box-shadow: 0px 2px 4px rgba(33, 36,
-                          41, 0.05); border-radius: 10px; padding: 13px 21px; }
-                          .tooltip__bubble::after { content: ''; border: 14px
-                          solid transparent; border-top-color: var(--primary);
-                          position: absolute; top: 100%; left: 50%; transform:
-                          translateX(-50%); } .tooltip__title { font-family:
-                          'Inter'; font-style: normal; font-weight: 400;
-                          font-size: 16px; line-height: 24px; color:
-                          var(--gray-2); white-space: nowrap; }
-                          .tooltip__trigger { color: var(--black); width: 22px;
-                          height: 22px; } .tooltip__trigger:hover ~
-                          .tooltip__bubble { visibility: visible; } @media
-                          screen and (max-width: 480px) { .tooltip__title {
-                          font-size: 14px; line-height: 22px; } .tooltip__bubble
-                          { padding: 10px 15px; } }
-                        </code>
+                      <div class="code">
+                        <div class="code__content">
+                          <code>
+                            .tooltip { display: inline-block; position:
+                            relative; } .tooltip_visible { text-align: center; }
+                            .tooltip_visible .tooltip__bubble { visibility:
+                            visible; } .tooltip_visible .tooltip__bubble {
+                            position: static; transform: translateX(0); }
+                            .tooltip_visible .tooltip__trigger { margin-top:
+                            13px; } .tooltip__bubble { visibility: hidden;
+                            position: absolute; bottom: calc(100% + 14px); left:
+                            50%; transform: translateX(-50%); background:
+                            var(--primary); box-shadow: 0px 2px 4px rgba(33, 36,
+                            41, 0.05); border-radius: 10px; padding: 13px 21px;
+                            } .tooltip__bubble::after { content: ''; border:
+                            14px solid transparent; border-top-color:
+                            var(--primary); position: absolute; top: 100%; left:
+                            50%; transform: translateX(-50%); } .tooltip__title
+                            { font-family: 'Inter'; font-style: normal;
+                            font-weight: 400; font-size: 16px; line-height:
+                            24px; color: var(--gray-2); white-space: nowrap; }
+                            .tooltip__trigger { color: var(--black); width:
+                            22px; height: 22px; } .tooltip__trigger:hover ~
+                            .tooltip__bubble { visibility: visible; } @media
+                            screen and (max-width: 480px) { .tooltip__title {
+                            font-size: 14px; line-height: 22px; }
+                            .tooltip__bubble { padding: 10px 15px; } }
+                          </code>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -137,5 +229,7 @@
         </div>
       </footer>
     </div>
+    <script src="../assets/scripts/mobile-menu.js"></script>
+    <script src="../assets/scripts/theme-changer.js"></script>
   </body>
 </html>
