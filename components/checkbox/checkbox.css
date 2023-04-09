@@ -50,6 +50,9 @@
 
 .checkbox__input:checked ~ .checkbox__wrapper .checkbox__area {
   background: var(--primary);
+  animation-name: area-shadow;
+  animation-duration: 200ms;
+  animation-timing-function: ease-in;
 }
 
 .checkbox__input:checked ~ .checkbox__wrapper .checkbox__icon {
@@ -74,6 +77,18 @@
 
 .checkbox__input:disabled ~ .checkbox__wrapper {
   cursor: default;
+}
+
+@keyframes area-shadow {
+  from {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 30px var(--primary);
+  }
+  to {
+    box-shadow: none;
+  }
 }
 
 @media screen and (max-width: 480px) {

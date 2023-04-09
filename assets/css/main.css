@@ -66,3 +66,12 @@ html[data-theme-dark] {
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+  animation-duration: 0s !important;
+}
