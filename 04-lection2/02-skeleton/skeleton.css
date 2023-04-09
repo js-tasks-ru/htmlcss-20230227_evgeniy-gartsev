@@ -28,6 +28,26 @@
   height: 20px;
   width: 100%;
   margin-bottom: 8px;
+  background-image: linear-gradient(
+    90deg,
+    var(--gray-3),
+    var(--gray-2),
+    var(--gray-3)
+  );
+  background-size: 400%;
+  animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
 }
 
 .skeleton__line_short {
