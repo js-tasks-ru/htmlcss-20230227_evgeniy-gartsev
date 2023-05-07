@@ -19,8 +19,8 @@
   align-items: center;
   width: 28px;
   height: 28px;
-  background: var(--white);
-  border: 1px solid var(--gray-2);
+  background: var(--main-bg);
+  border: 1px solid var(--border-dark);
   border-radius: 4px;
 }
 
@@ -30,7 +30,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--gray-4);
+  color: var(--border-light);
   user-select: none;
 }
 
@@ -50,6 +50,9 @@
 
 .checkbox__input:checked ~ .checkbox__wrapper .checkbox__area {
   background: var(--primary);
+  animation-name: area-shadow;
+  animation-duration: 200ms;
+  animation-timing-function: ease-in;
 }
 
 .checkbox__input:checked ~ .checkbox__wrapper .checkbox__icon {
@@ -61,7 +64,7 @@
 }
 
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__area {
-  background: var(--gray-2);
+  background: var(--border-dark);
 }
 
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__label {
@@ -74,6 +77,18 @@
 
 .checkbox__input:disabled ~ .checkbox__wrapper {
   cursor: default;
+}
+
+@keyframes area-shadow {
+  from {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 30px var(--primary);
+  }
+  to {
+    box-shadow: none;
+  }
 }
 
 @media screen and (max-width: 480px) {

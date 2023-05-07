@@ -1,9 +1,16 @@
 .tabs {
-  background: var(--white);
+  background: var(--main-bg);
+}
+
+.tabs_component .tabs__container {
+  background: var(--main-bg);
 }
 
 .tabs__container {
-  background-color: var(--gray-1);
+  background-color: var(--main-bg-light);
+  border-top: 1px solid var(--gray-2);
+  padding-top: 32px;
+  padding-left: 48px;
 }
 
 .tabs__wrapper {
@@ -21,6 +28,7 @@
   column-gap: 40px;
   max-width: 1110px;
   margin: 0 auto;
+  padding-left: 38px;
 }
 
 .tabs__input {
@@ -36,48 +44,51 @@
   line-height: 24px;
   color: var(--gray-3);
   padding-bottom: 8px;
+  cursor: pointer;
 }
 
-.tabs__input_all-components:checked
-  ~ .tabls__scroller
-  .tabs__label_all-components,
-.tabs__input_elements:checked ~ .tabls__scroller .tabs__label_elements,
-.tabs__input_containers:checked ~ .tabls__scroller .tabs__label_containers,
-.tabs__input_templates:checked ~ .tabls__scroller .tabs__label_templates {
-  color: var(--black);
-  border-bottom: 5px solid var(--black);
+.tabs__input_all:checked ~ .tabls__scroller .tabs__label_all,
+.tabs__input_first:checked ~ .tabls__scroller .tabs__label_first,
+.tabs__input_second:checked ~ .tabls__scroller .tabs__label_second,
+.tabs__input_third:checked ~ .tabls__scroller .tabs__label_third {
+  color: var(--main-bg-alternate);
+  border-bottom: 5px solid var(--main-bg-alternate);
 }
 
 .tabs_.tabs__container,
-.tabs__input_containers:checked ~ .tabs__container .tabs__content,
-.tabs__input_elements:checked ~ .tabs__container .tabs__content,
-.tabs__input_templates:checked ~ .tabs__container .tabs__content {
+.tabs__input_first:checked ~ .tabs__container .tabs__content,
+.tabs__input_second:checked ~ .tabs__container .tabs__content,
+.tabs__input_third:checked ~ .tabs__container .tabs__content {
   display: none;
 }
 
-.tabs__input_all-components:checked ~ .tabs__container .tabs__content {
+.tabs__input_all:checked ~ .tabs__container .tabs__content {
   display: block;
 }
 
-.tabs__input_containers:checked ~ .tabs__container .tabs__content_containers {
+.tabs__input_first:checked ~ .tabs__container .tabs__content_first {
   display: block;
 }
 
-.tabs__input_elements:checked ~ .tabs__container .tabs__content_elements {
+.tabs__input_second:checked ~ .tabs__container .tabs__content_second {
   display: block;
 }
 
-.tabs__input_templates:checked ~ .tabs__container .tabs__content_templates {
+.tabs__input_third:checked ~ .tabs__container .tabs__content_third {
   display: block;
 }
 
 @media screen and (max-width: 480px) {
-  .tabls__scroller {
+  .tabls__scroller:not(.tabs_component .tabls__scroller) {
     display: none;
   }
 
   .tabs__wrapper {
     gap: 16px;
     padding: 22px 0 133px;
+  }
+
+  .tabs__container {
+    padding-left: 0;
   }
 }

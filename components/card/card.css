@@ -6,6 +6,7 @@
   box-shadow: 0px 2px 4px var(--black);
   border-radius: 12px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .card:hover {

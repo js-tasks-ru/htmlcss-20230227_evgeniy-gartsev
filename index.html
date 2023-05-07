@@ -4,11 +4,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body>
+  <body class="preload">
     <div class="page">
+      <div class="mobile-menu" id="burger-menu">
+        <div class="mobile-menu__top">
+          <svg class="mobile-menu__close" id="burger-menu-close">
+            <use href="../../assets/images/icons.svg#close-button"></use>
+          </svg>
+          <div class="logo mobile-menu__logo">
+            <div class="logo__square"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </div>
+        </div>
+        <div class="mobile-menu__wrapper">
+          <div class="mobile-menu__mode">
+            <h4 class="mobile-menu__mode-title">Dark mode</h4>
+            <label class="toggler toggler_hidden-title">
+              <input
+                type="checkbox"
+                class="toggler__input"
+                id="theme-changer-mobile"
+              />
+              <div class="toggler__wrapper">
+                <div class="toggler__area">
+                  <div class="toggler__icon"></div>
+                </div>
+                <h4 class="toggler__label">Default</h4>
+              </div>
+            </label>
+          </div>
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Elements</h4>
+            <div class="mobile-menu__manage-items">
+              <a
+                href="./pages/custom_form_elements.html"
+                class="mobile-menu__manage-item"
+                >Custom form elements</a
+              >
+              <a href="./pages/tooltip.html" class="mobile-menu__manage-item"
+                >Tooltip</a
+              >
+              <a href="./pages/avatar.html" class="mobile-menu__manage-item"
+                >Avatar</a
+              >
+            </div>
+          </div>
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Containers</h4>
+            <div class="mobile-menu__manage-items">
+              <a href="./pages/histogram.html" class="mobile-menu__manage-item"
+                >Histogram</a
+              >
+              <a
+                href="./pages/modal_dialog.html"
+                class="mobile-menu__manage-item"
+                >Modal</a
+              >
+              <a href="./pages/calendar.html" class="mobile-menu__manage-item"
+                >Calendar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
       <header class="header">
         <div class="container">
           <div class="header__top">
+            <svg
+              class="mobile-menu-open header__top_left"
+              id="burger-menu-open"
+            >
+              <use href="assets/images/icons.svg#burger-button"></use>
+            </svg>
             <div class="logo">
               <div class="logo__square"></div>
               <div class="logo__circle"></div>
@@ -36,59 +104,54 @@
               </svg>
             </div>
           </div>
-          <h1 class="header-title header__title">Reusable component library</h1>
+          <h1 class="header__title">Reusable component library</h1>
         </div>
       </header>
-
       <div class="tabs">
         <input
           type="radio"
-          class="tabs__input tabs__input_all-components"
-          id="tabs__all-components"
+          class="tabs__input tabs__input_all"
+          id="tabs-all"
           name="tabs-content"
           checked
         />
         <input
           type="radio"
-          class="tabs__input tabs__input_elements"
-          id="tabs__elements"
+          class="tabs__input tabs__input_first"
+          id="tabs-first"
           name="tabs-content"
         />
         <input
           type="radio"
-          class="tabs__input tabs__input_containers"
-          id="tabs__containers"
+          class="tabs__input tabs__input_second"
+          id="tabs-second"
           name="tabs-content"
         />
         <input
           type="radio"
-          class="tabs__input tabs__input_templates"
-          id="tabs__templates"
+          class="tabs__input tabs__input_third"
+          id="tabs-third"
           name="tabs-content"
         />
         <div class="tabls__scroller">
-          <label
-            class="tabs__label tabs__label_all-components"
-            for="tabs__all-components"
+          <label class="tabs__label tabs__label_all" for="tabs-all"
             >All components</label
           >
-          <label class="tabs__label tabs__label_elements" for="tabs__elements"
-            >Elements</label
-          >
-          <label
-            class="tabs__label tabs__label_containers"
-            for="tabs__containers"
+          <label class="tabs__label tabs__label_first" for="tabs-first"
             >Containers</label
           >
-          <label class="tabs__label tabs__label_templates" for="tabs__templates"
-            >Templates</label
+          <label class="tabs__label tabs__label_second" for="tabs-second"
+            >Elements</label
           >
         </div>
 
         <main class="tabs__container">
           <div class="container">
             <div class="tabs__wrapper">
-              <a class="card tabs__content tabs__content_elements">
+              <a
+                class="card tabs__content tabs__content_second"
+                href="pages/tooltip.html"
+              >
                 <div class="card__content">
                   <div class="tooltip tooltip_visible">
                     <div class="tooltip__bubble">
@@ -101,11 +164,13 @@
                 </div>
                 <div class="card__description">
                   <h3 class="card__title">Tooltip</h3>
-                  <h4 class="card__title-little">Container</h4>
+                  <h4 class="card__title-little">Element</h4>
                 </div>
               </a>
-
-              <a class="card tabs__content tabs__content_elements">
+              <a
+                class="card tabs__content tabs__content_second"
+                href="./pages/custom_form_elements.html"
+              >
                 <div class="card__content">
                   <div class="card__checkboxes">
                     <label class="checkbox checkbox_inactive">
@@ -181,8 +246,10 @@
                   <h4 class="card__title-little">Element</h4>
                 </div>
               </a>
-
-              <a class="card tabs__content tabs__content_containers">
+              <a
+                class="card tabs__content tabs__content_first"
+                href="pages/calendar.html"
+              >
                 <div class="card__content">
                   <div class="calendar">
                     <h3 class="calendar__title">October 2019</h3>
@@ -247,8 +314,10 @@
                   <h4 class="card__title-little">Container</h4>
                 </div>
               </a>
-
-              <a class="card tabs__content tabs__content_containers">
+              <a
+                class="card tabs__content tabs__content_first"
+                href="pages/modal_dialog.html"
+              >
                 <div class="card__content">
                   <div class="modal modal_inactive" id="modal">
                     <div class="modal__window">
@@ -269,8 +338,10 @@
                   <h4 class="card__title-little">Container</h4>
                 </div>
               </a>
-
-              <a class="card tabs__content tabs__content_elements">
+              <a
+                class="card tabs__content tabs__content_first"
+                href="pages/histogram.html"
+              >
                 <div class="card__content">
                   <div class="histogram histogram_inactive">
                     <div class="histogram__header">
@@ -405,11 +476,13 @@
                 </div>
                 <div class="card__description">
                   <h3 class="card__title">Histogram</h3>
-                  <h4 class="card__title-little">Element</h4>
+                  <h4 class="card__title-little">Container</h4>
                 </div>
               </a>
-
-              <a class="card tabs__content tabs__content_elements">
+              <a
+                class="card tabs__content tabs__content_second"
+                href="pages/avatar.html"
+              >
                 <div class="card__content">
                   <div class="avatar">
                     <img
@@ -444,6 +517,9 @@
         </div>
       </footer>
     </div>
+    <script src="./assets/scripts/mobile-menu.js"></script>
     <script src="./assets/scripts/theme-changer.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="assets/scripts/preload.js"></script>
   </body>
 </html>

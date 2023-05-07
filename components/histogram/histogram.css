@@ -1,5 +1,5 @@
 .histogram {
-  background: var(--white);
+  background: var(--main-bg);
   border: 1px solid var(--gray-3);
   border-radius: 8px;
   padding: 16px 24px 24px 24px;
@@ -22,7 +22,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--black);
+  color: var(--main-bg-alternate);
   opacity: 0.8;
   margin-bottom: 6px;
 }
@@ -42,7 +42,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: var(--black);
+  color: var(--main-bg-alternate);
 }
 
 .histogram__chart {
@@ -51,11 +51,23 @@
   align-items: end;
   column-gap: 1px;
   margin-top: 39px;
+  animation: raise-charts 500ms linear;
 }
 
 .histogram__chart-block {
   background-color: var(--primary);
-  flex-basis: 20px;
+  width: 20px;
+}
+
+@keyframes raise-charts {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom left;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom left;
+  }
 }
 
 @media screen and (max-width: 480px) {

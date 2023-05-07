@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="mobile-menu" id="burger-menu">
+        <div class="mobile-menu__top">
+          <svg class="mobile-menu__close" id="burger-menu-close">
+            <use href="../assets/images/icons.svg#close-button"></use>
+          </svg>
+          <div class="logo mobile-menu__logo">
+            <div class="logo__square"></div>
+            <div class="logo__circle"></div>
+            <div class="logo__triangle"></div>
+          </div>
+        </div>
+        <div class="mobile-menu__wrapper">
+          <div class="mobile-menu__mode">
+            <h4 class="mobile-menu__mode-title">Dark mode</h4>
+            <label class="toggler toggler_hidden-title">
+              <input
+                type="checkbox"
+                class="toggler__input"
+                id="theme-changer-mobile"
+              />
+              <div class="toggler__wrapper">
+                <div class="toggler__area">
+                  <div class="toggler__icon"></div>
+                </div>
+                <h4 class="toggler__label">Default</h4>
+              </div>
+            </label>
+          </div>
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Elements</h4>
+            <div class="mobile-menu__manage-items">
+              <a
+                href="custom_form_elements.html"
+                class="mobile-menu__manage-item"
+                >Custom form elements</a
+              >
+              <a href="tooltip.html" class="mobile-menu__manage-item"
+                >Tooltip</a
+              >
+              <a href="avatar.html" class="mobile-menu__manage-item">Avatar</a>
+            </div>
+          </div>
+          <div class="mobile-menu__manage">
+            <h4 class="mobile-menu__manage-title">Containers</h4>
+            <div class="mobile-menu__manage-items">
+              <a href="histogram.html" class="mobile-menu__manage-item"
+                >Histogram</a
+              >
+              <a href="modal_dialog.html" class="mobile-menu__manage-item"
+                >Modal</a
+              >
+              <a href="calendar.html" class="mobile-menu__manage-item"
+                >Calendar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header header_component">
+        <div class="container">
+          <div class="header__top">
+            <svg
+              class="mobile-menu-open header__top_left"
+              id="burger-menu-open"
+            >
+              <use href="../assets/images/icons.svg#burger-button"></use>
+            </svg>
+            <div class="logo">
+              <div class="logo__square"></div>
+              <div class="logo__circle"></div>
+              <div class="logo__triangle"></div>
+            </div>
+            <div class="theme-switch">
+              <svg class="theme-switch__sun">
+                <use href="../assets/images/icons.svg#sun"></use>
+              </svg>
+              <label class="toggler toggler_hidden-title">
+                <input
+                  type="checkbox"
+                  class="toggler__input"
+                  id="theme-changer"
+                />
+                <div class="toggler__wrapper">
+                  <div class="toggler__area">
+                    <div class="toggler__icon"></div>
+                  </div>
+                  <h4 class="toggler__label">Default</h4>
+                </div>
+              </label>
+              <svg class="theme-switch__moon">
+                <use href="../assets/images/icons.svg#moon"></use>
+              </svg>
+            </div>
+          </div>
+          <h1 class="header-title header__title">Reusable component library</h1>
+        </div>
+      </header>
+      <div class="component">
+        <div class="container component__container">
+          <div class="sidebar component__sidebar">
+            <h4 class="sidebar__title">Components</h4>
+            <a class="sidebar__link" href="modal_dialog.html">Modal</a>
+            <a class="sidebar__link" href="tooltip.html">Tooltip</a>
+            <a class="sidebar__link" href="avatar.html">Avatar</a>
+            <a class="sidebar__link" href="calendar.html">Calendar</a>
+            <a class="sidebar__link" href="histogram.html">Histogram</a>
+            <a class="sidebar__link" href="custom_form_elements.html"
+              >Custom form elements</a
+            >
+            <a class="sidebar__link" href="../index.html">Main page</a>
+          </div>
+          <div class="component__description">
+            <div class="component__view">
+              <h3 class="component__title">Avatar</h3>
+              <div class="avatar">
+                <img
+                  class="avatar__img"
+                  src="../assets/images/avatar-200.jpg"
+                  alt="Avatar"
+                />
+              </div>
+            </div>
+            <div class="tabs tabs_component">
+              <input
+                type="radio"
+                class="tabs__input tabs__input_first"
+                id="tabs-first"
+                name="tabs-content"
+                checked
+              />
+              <input
+                type="radio"
+                class="tabs__input tabs__input_second"
+                id="tabs-second"
+                name="tabs-content"
+              />
+              <div class="tabls__scroller">
+                <label class="tabs__label tabs__label_first" for="tabs-first"
+                  >HTML</label
+                >
+                <label class="tabs__label tabs__label_second" for="tabs-second"
+                  >CSS</label
+                >
+              </div>
+              <main class="tabs__container">
+                <div class="container">
+                  <div class="tabs__wrapper">
+                    <div class="tabs__content tabs__content_first">
+                      <div class="code">
+                        <div class="code__content">
+                          <code
+                            >&lt;div class=&quot;avatar&quot;&gt; &lt;img
+                            class=&quot;avatar__img&quot;
+                            src=&quot;../assets/images/avatar-200.jpg&quot;
+                            alt=&quot;Avatar&quot; /&gt; &lt;/div&gt;</code
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content tabs__content_second">
+                      <div class="code">
+                        <div class="code__content">
+                          <code>
+                            .avatar { width: 160px; height: 160px;
+                            border-radius: 50%; overflow: hidden; } .avatar__img
+                            { height: 100%; width: 100%; object-fit: cover; }
+                            @media screen and (max-width: 480px) { .avatar {
+                            width: 116px; height: 116px; } }
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <h2 class="footer__title">About</h2>
+          <div class="footer__description">
+            <p class="footer__paragraph">
+              This project is a collection of professionally designed,
+              pre-built, fully responsive HTML snippets you can drop into your
+              projects. Get started by checking out our free preview components,
+              or browsing the PNG previews in the categories you're most curious
+              about.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../assets/scripts/mobile-menu.js"></script>
+    <script src="../assets/scripts/theme-changer.js"></script>
+  </body>
+</html>

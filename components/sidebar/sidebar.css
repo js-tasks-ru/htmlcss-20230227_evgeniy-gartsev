@@ -4,7 +4,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: var(--main-text);
+  color: var(--main-bg-alternate);
   margin-bottom: 16px;
 }
 
@@ -15,7 +15,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: var(--main-text);
+  color: var(--main-bg-alternate);
   text-decoration: none;
   margin-bottom: 4px;
 }
